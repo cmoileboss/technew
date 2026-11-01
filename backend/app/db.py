@@ -1,5 +1,5 @@
 import os
-from contextlib import contextmanager
+from contextlib import AbstractContextManager, contextmanager
 from pathlib import Path
 from typing import Iterator
 
@@ -13,13 +13,10 @@ DB_PATH = Path(os.environ.get("TECHNEWS_DB", Path(__file__).resolve().parent.par
 
 DEFAULT_FEEDS = [
     ("CERT-FR - Alertes", "https://www.cert.ssi.gouv.fr/alerte/feed/"),
-    ("The Hacker News", "https://feeds.feedburner.com/TheHackerNews"),
+    ("The Hacker News", "https://feeds.feedburner.com/TheHackersNews"),
     ("Python Insider", "https://blog.python.org/rss.xml"),
     ("Spring Blog", "https://spring.io/blog.atom"),
 ]
-
-_engine: Engine | None = None
-
 
 def _create_engine() -> Engine:
     engine = create_engine(
@@ -36,27 +33,42 @@ def _enable_foreign_keys(connection, _record) -> None:
     cursor.close()
 
 
-@contextmanager
-def connect() -> Iterator[Session]:
-    if _engine is None:
-        raise RuntimeError("La base de données n'est pas initialisée.")
-    with Session(_engine) as session:
-        try:
-            yield session
-            session.commit()
-        except Exception:
-            session.rollback()
-            raise
+class Database:
+    def __init__(self) -> None:
+        self.engine: Engine | None = None
+
+    @contextmanager
+    def connect(self) -> Iterator[Session]:
+        engine = self.engine
+        if engine is None:
+            raise RuntimeError("La base de données n'est pas initialisée.")
+        with Session(engine) as session:
+            try:
+                yield session
+                session.commit()
+            except Exception:
+                session.rollback()
+                raise
+
+    def init_db(self, seed: bool = True) -> None:
+        if self.engine is not None:
+            self.engine.dispose()
+        engine = _create_engine()
+        self.engine = engine
+        Base.metadata.create_all(engine)
+
+        with Session(engine) as session:
+            if seed and session.scalar(select(func.count()).select_from(Feed)) == 0:
+                session.add_all(Feed(title=title, url=url) for title, url in DEFAULT_FEEDS)
+                session.commit()
+
+
+DATABASE = Database()
+
+
+def connect() -> AbstractContextManager[Session]:
+    return DATABASE.connect()
 
 
 def init_db(seed: bool = True) -> None:
-    global _engine
-    if _engine is not None:
-        _engine.dispose()
-    _engine = _create_engine()
-    Base.metadata.create_all(_engine)
-
-    with Session(_engine) as session:
-        if seed and session.scalar(select(func.count()).select_from(Feed)) == 0:
-            session.add_all(Feed(title=title, url=url) for title, url in DEFAULT_FEEDS)
-            session.commit()
+    DATABASE.init_db(seed)

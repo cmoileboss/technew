@@ -2,11 +2,11 @@ from sqlalchemy import ForeignKey, Index, Integer, String, Text, UniqueConstrain
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 
 
-class Base(DeclarativeBase):
+class Base(DeclarativeBase): # pylint: disable=too-few-public-methods
     pass
 
 
-class Feed(Base):
+class Feed(Base): # pylint: disable=too-few-public-methods
     __tablename__ = "feeds"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
@@ -22,7 +22,7 @@ class Feed(Base):
     )
 
 
-class Article(Base):
+class Article(Base): # pylint: disable=too-few-public-methods
     __tablename__ = "articles"
     __table_args__ = (
         UniqueConstraint("feed_id", "guid"),

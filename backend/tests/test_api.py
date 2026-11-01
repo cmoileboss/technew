@@ -1,7 +1,9 @@
 import pytest
 from fastapi.testclient import TestClient
+from sqlalchemy import select
 
 from app import db, fetcher, main
+from app.models import Feed
 from app.services import feed_service
 
 RSS = b"""<?xml version="1.0"?>
@@ -42,6 +44,15 @@ def test_parse_feed_cleans_html_and_skips_unsafe_links():
 def test_invalid_content_rejected():
     with pytest.raises(fetcher.FeedError):
         fetcher.parse_feed(b"not a feed")
+
+
+def test_init_db_seeds_current_hacker_news_feed(tmp_path, monkeypatch):
+    monkeypatch.setattr(db, "DB_PATH", tmp_path / "seed.db")
+    db.init_db()
+    with db.connect() as session:
+        feed = session.scalar(select(Feed).where(Feed.title == "The Hacker News"))
+        assert feed is not None
+        assert feed.url == "https://feeds.feedburner.com/TheHackersNews"
 
 
 def test_add_feed_list_and_dedupe(client):
