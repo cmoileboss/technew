@@ -2,6 +2,7 @@ import pytest
 from fastapi.testclient import TestClient
 
 from app import db, fetcher, main
+from app.services import feed_service
 
 RSS = b"""<?xml version="1.0"?>
 <rss version="2.0"><channel><title>Demo</title>
@@ -25,7 +26,7 @@ def client(tmp_path, monkeypatch):
             raise fetcher.FeedError("boom")
         return content["data"]
 
-    monkeypatch.setattr(main, "fetch_feed_content", fake_fetch)
+    monkeypatch.setattr(feed_service, "fetch_feed_content", fake_fetch)
     with TestClient(main.app) as c:
         c.content = content
         yield c
