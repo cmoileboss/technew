@@ -1,55 +1,62 @@
 import os
-import sqlite3
 from contextlib import contextmanager
 from pathlib import Path
 from typing import Iterator
 
-DB_PATH = Path(os.environ.get("TECHNEWS_DB", Path(__file__).resolve().parent.parent / "technews.db"))
+from sqlalchemy import create_engine, event, func, select
+from sqlalchemy.engine import Engine, URL
+from sqlalchemy.orm import Session
 
-SCHEMA = """
-CREATE TABLE IF NOT EXISTS feeds (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    url TEXT NOT NULL UNIQUE,
-    title TEXT NOT NULL,
-    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    last_fetched_at TEXT,
-    last_error TEXT
-);
-CREATE TABLE IF NOT EXISTS articles (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    feed_id INTEGER NOT NULL REFERENCES feeds(id) ON DELETE CASCADE,
-    guid TEXT NOT NULL,
-    title TEXT NOT NULL,
-    link TEXT NOT NULL,
-    summary TEXT NOT NULL DEFAULT '',
-    published_at TEXT,
-    UNIQUE (feed_id, guid)
-);
-CREATE INDEX IF NOT EXISTS idx_articles_published ON articles (published_at DESC);
-"""
+from .models import Base, Feed
+
+DB_PATH = Path(os.environ.get("TECHNEWS_DB", Path(__file__).resolve().parent.parent / "technews.db"))
 
 DEFAULT_FEEDS = [
     ("CERT-FR - Alertes", "https://www.cert.ssi.gouv.fr/alerte/feed/"),
-    ("The Hacker News", "https://feeds.feedburner.com/TheHackersNews"),
+    ("The Hacker News", "https://feeds.feedburner.com/TheHackerNews"),
     ("Python Insider", "https://blog.python.org/rss.xml"),
     ("Spring Blog", "https://spring.io/blog.atom"),
 ]
 
+_engine: Engine | None = None
+
+
+def _create_engine() -> Engine:
+    engine = create_engine(
+        URL.create("sqlite", database=str(DB_PATH)),
+        connect_args={"check_same_thread": False},
+    )
+    event.listen(engine, "connect", _enable_foreign_keys)
+    return engine
+
+
+def _enable_foreign_keys(connection, _record) -> None:
+    cursor = connection.cursor()
+    cursor.execute("PRAGMA foreign_keys=ON")
+    cursor.close()
+
 
 @contextmanager
-def connect() -> Iterator[sqlite3.Connection]:
-    conn = sqlite3.connect(DB_PATH)
-    conn.row_factory = sqlite3.Row
-    conn.execute("PRAGMA foreign_keys = ON")
-    try:
-        yield conn
-        conn.commit()
-    finally:
-        conn.close()
+def connect() -> Iterator[Session]:
+    if _engine is None:
+        raise RuntimeError("La base de données n'est pas initialisée.")
+    with Session(_engine) as session:
+        try:
+            yield session
+            session.commit()
+        except Exception:
+            session.rollback()
+            raise
 
 
 def init_db(seed: bool = True) -> None:
-    with connect() as conn:
-        conn.executescript(SCHEMA)
-        if seed and conn.execute("SELECT COUNT(*) FROM feeds").fetchone()[0] == 0:
-            conn.executemany("INSERT INTO feeds (title, url) VALUES (?, ?)", DEFAULT_FEEDS)
+    global _engine
+    if _engine is not None:
+        _engine.dispose()
+    _engine = _create_engine()
+    Base.metadata.create_all(_engine)
+
+    with Session(_engine) as session:
+        if seed and session.scalar(select(func.count()).select_from(Feed)) == 0:
+            session.add_all(Feed(title=title, url=url) for title, url in DEFAULT_FEEDS)
+            session.commit()

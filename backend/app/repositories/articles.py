@@ -1,39 +1,74 @@
-import sqlite3
+from sqlalchemy import func, select
+from sqlalchemy.dialects.sqlite import insert
+from sqlalchemy.orm import Session
 
 from ..fetcher import ParsedArticle
+from ..models import Article, Feed
 
 
 class ArticleRepository:
-    def __init__(self, conn: sqlite3.Connection):
-        self.conn = conn
+    def __init__(self, session: Session):
+        self.session = session
 
     def add_many(self, feed_id: int, articles: list[ParsedArticle]) -> int:
         """Insert articles ignoring duplicates; return the number of rows actually inserted."""
-        cursor = self.conn.executemany(
-            "INSERT OR IGNORE INTO articles (feed_id, guid, title, link, summary, published_at) VALUES (?, ?, ?, ?, ?, ?)",
-            [(feed_id, a.guid, a.title, a.link, a.summary, a.published_at) for a in articles],
+        if not articles:
+            return 0
+        statement = insert(Article).values(
+            [
+                {
+                    "feed_id": feed_id,
+                    "guid": article.guid,
+                    "title": article.title,
+                    "link": article.link,
+                    "summary": article.summary,
+                    "published_at": article.published_at,
+                }
+                for article in articles
+            ]
         )
-        return max(cursor.rowcount, 0)
+        result = self.session.execute(
+            statement.on_conflict_do_nothing(index_elements=["feed_id", "guid"])
+        )
+        return max(result.rowcount, 0)
 
     def search(
         self, feed_id: int | None, query: str | None, limit: int, offset: int
-    ) -> tuple[list[sqlite3.Row], int]:
-        where: list[str] = []
-        params: list[object] = []
+    ) -> tuple[list[dict], int]:
+        conditions = []
         if feed_id is not None:
-            where.append("a.feed_id = ?")
-            params.append(feed_id)
+            conditions.append(Article.feed_id == feed_id)
         if query and query.strip():
             escaped = query.strip().replace("\\", "\\\\").replace("%", "\\%").replace("_", "\\_")
-            where.append("(a.title LIKE ? ESCAPE '\\' OR a.summary LIKE ? ESCAPE '\\')")
-            params += [f"%{escaped}%"] * 2
-        clause = f"WHERE {' AND '.join(where)}" if where else ""
-        total = self.conn.execute(f"SELECT COUNT(*) FROM articles a {clause}", params).fetchone()[0]
-        rows = self.conn.execute(
-            f"""SELECT a.id, a.feed_id, f.title AS feed_title, a.title, a.link, a.summary, a.published_at
-                FROM articles a JOIN feeds f ON f.id = a.feed_id {clause}
-                ORDER BY a.published_at IS NULL, a.published_at DESC, a.id DESC
-                LIMIT ? OFFSET ?""",
-            [*params, limit, offset],
-        ).fetchall()
-        return rows, total
+            pattern = f"%{escaped}%"
+            conditions.append(
+                Article.title.like(pattern, escape="\\")
+                | Article.summary.like(pattern, escape="\\")
+            )
+
+        total = self.session.scalar(
+            select(func.count(Article.id))
+            .select_from(Article)
+            .where(*conditions)
+        )
+        rows = self.session.execute(
+            select(
+                Article.id,
+                Article.feed_id,
+                Feed.title.label("feed_title"),
+                Article.title,
+                Article.link,
+                Article.summary,
+                Article.published_at,
+            )
+            .join(Feed, Article.feed_id == Feed.id)
+            .where(*conditions)
+            .order_by(
+                Article.published_at.is_(None),
+                Article.published_at.desc(),
+                Article.id.desc(),
+            )
+            .limit(limit)
+            .offset(offset)
+        ).mappings()
+        return [dict(row) for row in rows], total or 0
