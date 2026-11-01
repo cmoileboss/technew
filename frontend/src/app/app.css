@@ -1,0 +1,94 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background: #f4f6f9;
+  color: #1f2933;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #0b3d66;
+  color: #fff;
+}
+.topbar h1 { margin: 0; font-size: 1.3rem; }
+.search { flex: 1; max-width: 480px; }
+
+input {
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #c4ccd6;
+  border-radius: 6px;
+  font: inherit;
+}
+button {
+  padding: 0.5rem 0.9rem;
+  border: 0;
+  border-radius: 6px;
+  background: #1a73c4;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+button:disabled { opacity: 0.6; cursor: default; }
+button.link { background: none; color: inherit; padding: 0 0.4rem; }
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 1.5rem;
+  background: #dff1e3;
+}
+.banner.error { background: #fbe0e0; }
+
+.layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  align-items: start;
+}
+@media (max-width: 800px) {
+  .layout { grid-template-columns: 1fr; }
+}
+
+.sidebar, .card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.sidebar { padding: 1rem; }
+.sidebar h2 { margin: 0 0 0.5rem; font-size: 1rem; }
+
+.feeds { list-style: none; margin: 0 0 1.5rem; padding: 0; }
+.feeds li { position: relative; }
+.feed {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 2rem;
+  background: none;
+  color: inherit;
+  text-align: left;
+}
+.feed:hover { background: #eef3f8; }
+.feed.active { background: #dbe9f6; font-weight: 600; }
+.feed-title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.count { color: #66788a; font-size: 0.85rem; }
+.remove { position: absolute; top: 0.3rem; right: 0; color: #a33; }
+.feed-error { display: block; padding: 0 0.9rem; color: #a33; }
+
+.add { display: flex; flex-direction: column; gap: 0.5rem; }
+
+.card { padding: 1rem 1.25rem; margin-bottom: 1rem; }
+.card h3 { margin: 0 0 0.25rem; font-size: 1.1rem; }
+.card a { color: #0b3d66; text-decoration: none; }
+.card a:hover { text-decoration: underline; }
+.card p { margin: 0.4rem 0 0; line-height: 1.45; }
+
+.meta { color: #66788a; font-size: 0.85rem; margin: 0 0 0.75rem; }
+.card .meta { margin: 0; }
+.empty { text-align: center; color: #66788a; padding: 2rem 0; }
+.more { display: block; margin: 1rem auto; }
