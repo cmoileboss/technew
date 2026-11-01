@@ -1,10 +1,12 @@
 import pytest
+from datetime import datetime, timezone
+
 from fastapi.testclient import TestClient
 from sqlalchemy import select
 
 from app import db, fetcher, main
 from app.models import Feed
-from app.services import feed_service
+from app.services import DigestService, feed_service
 
 RSS = b"""<?xml version="1.0"?>
 <rss version="2.0"><channel><title>Demo</title>
@@ -94,3 +96,4 @@ async def test_ssrf_guard_blocks_private_and_bad_scheme():
     for url in ("http://127.0.0.1/rss", "file:///etc/passwd", "http://169.254.169.254/"):
         with pytest.raises(fetcher.FeedError):
             await fetcher.fetch_feed_content(url)
+
