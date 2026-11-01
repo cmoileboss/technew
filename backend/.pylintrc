@@ -1,0 +1,12 @@
+[MASTER]
+ignore=.venv
+
+[FORMAT]
+max-line-length=120
+
+[MESSAGES CONTROL]
+# Docstrings non exigées sur ce petit projet ; les fixtures pytest redéfinissent des noms par conception.
+disable=missing-module-docstring,missing-class-docstring,missing-function-docstring,redefined-outer-name,unused-argument
+
+[TYPECHECK]
+extension-pkg-allow-list=pydantic

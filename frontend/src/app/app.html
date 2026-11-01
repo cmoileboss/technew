@@ -1,0 +1,86 @@
+<header class="topbar">
+  <h1>TechNews</h1>
+  <input
+    class="search"
+    type="search"
+    placeholder="Rechercher dans les articles…"
+    [(ngModel)]="query"
+    (ngModelChange)="onSearch()"
+    aria-label="Rechercher"
+  />
+  <button type="button" (click)="refresh()" [disabled]="refreshing()">
+    {{ refreshing() ? 'Actualisation…' : 'Actualiser' }}
+  </button>
+</header>
+
+@if (message(); as m) {
+  <div class="banner" [class.error]="m.kind === 'error'" role="status">
+    {{ m.text }}
+    <button type="button" class="link" (click)="message.set(null)" aria-label="Fermer">✕</button>
+  </div>
+}
+
+<div class="layout">
+  <aside class="sidebar">
+    <h2>Flux</h2>
+    <ul class="feeds">
+      <li>
+        <button type="button" class="feed" [class.active]="selectedFeedId() === null" (click)="selectFeed(null)">
+          Tous les articles
+        </button>
+      </li>
+      @for (feed of feeds(); track feed.id) {
+        <li>
+          <button type="button" class="feed" [class.active]="selectedFeedId() === feed.id" (click)="selectFeed(feed.id)">
+            <span class="feed-title">{{ feed.title }}</span>
+            <span class="count">{{ feed.article_count }}</span>
+          </button>
+          <button type="button" class="link remove" (click)="removeFeed(feed)" [attr.aria-label]="'Supprimer ' + feed.title">
+            ✕
+          </button>
+          @if (feed.last_error) {
+            <small class="feed-error" [title]="feed.last_error">⚠ {{ feed.last_error }}</small>
+          }
+        </li>
+      }
+    </ul>
+
+    <form class="add" (ngSubmit)="addFeed()">
+      <h2>Ajouter un flux</h2>
+      <input type="url" name="url" placeholder="https://exemple.com/rss" [(ngModel)]="newUrl" required />
+      <input type="text" name="title" placeholder="Titre (optionnel)" [(ngModel)]="newTitle" />
+      <button type="submit">Ajouter</button>
+    </form>
+  </aside>
+
+  <main class="content">
+    <p class="meta">{{ total() }} article(s)</p>
+
+    @for (article of articles(); track article.id) {
+      <article class="card">
+        <h3>
+          <a [href]="article.link" target="_blank" rel="noopener noreferrer">{{ article.title }}</a>
+        </h3>
+        <p class="meta">
+          {{ article.feed_title }}
+          @if (article.published_at) {
+            · {{ article.published_at | date: 'dd/MM/yyyy HH:mm' }}
+          }
+        </p>
+        @if (article.summary) {
+          <p>{{ article.summary }}</p>
+        }
+      </article>
+    } @empty {
+      @if (!loading()) {
+        <p class="empty">Aucun article. Ajoutez un flux ou cliquez sur « Actualiser ».</p>
+      }
+    }
+
+    @if (loading()) {
+      <p class="meta">Chargement…</p>
+    } @else if (articles().length < total()) {
+      <button type="button" class="more" (click)="loadMore()">Charger plus</button>
+    }
+  </main>
+</div>
