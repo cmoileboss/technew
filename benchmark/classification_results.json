@@ -1,0 +1,32 @@
+[
+  {
+    "méthode": "Référence : classe majoritaire",
+    "exactitude": 0.646,
+    "f1_macro": 0.196,
+    "ms_par_article": 0.0
+  },
+  {
+    "méthode": "Mots-clés",
+    "exactitude": 0.866,
+    "f1_macro": 0.59,
+    "ms_par_article": 0.25
+  },
+  {
+    "méthode": "Zero-shot embeddings",
+    "exactitude": 0.902,
+    "f1_macro": 0.617,
+    "ms_par_article": 19.8
+  },
+  {
+    "méthode": "TF-IDF + régression logistique (CV)",
+    "exactitude": 0.921,
+    "f1_macro": 0.672,
+    "ms_par_article": 2.8
+  },
+  {
+    "méthode": "Embeddings + régression logistique (CV)",
+    "exactitude": 0.927,
+    "f1_macro": 0.785,
+    "ms_par_article": 19.91
+  }
+]

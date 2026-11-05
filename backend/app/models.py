@@ -1,4 +1,4 @@
-from sqlalchemy import ForeignKey, Index, Integer, String, Text, UniqueConstraint, func, text
+from sqlalchemy import Float, ForeignKey, Index, Integer, String, Text, UniqueConstraint, func, text
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 
 
@@ -38,4 +38,6 @@ class Article(Base): # pylint: disable=too-few-public-methods
     link: Mapped[str] = mapped_column(String, nullable=False)
     summary: Mapped[str] = mapped_column(Text, nullable=False, default="")
     published_at: Mapped[str | None] = mapped_column(String)
+    theme: Mapped[str | None] = mapped_column(String)
+    theme_score: Mapped[float | None] = mapped_column(Float)
     feed: Mapped[Feed] = relationship(back_populates="articles")

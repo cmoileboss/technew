@@ -30,6 +30,8 @@ describe('App', () => {
           link: 'https://example.com/1',
           summary: 'Un résumé',
           published_at: '2025-11-01T10:00:00+00:00',
+          theme: 'sécurité',
+          theme_score: 0.9,
         },
       ],
     });
@@ -39,7 +41,24 @@ describe('App', () => {
     const link = el.querySelector('article a') as HTMLAnchorElement;
     expect(link.textContent).toContain('Premier article');
     expect(link.href).toBe('https://example.com/1');
+    expect((el.querySelector('article .badge') as HTMLElement).textContent).toContain('Sécurité');
     expect(el.textContent).toContain('Un résumé');
+    http.verify();
+  });
+
+  it('filters articles by theme', () => {
+    const fixture = TestBed.createComponent(App);
+    fixture.detectChanges();
+    http.expectOne('/api/feeds').flush([]);
+    http.expectOne((r) => r.url === '/api/articles').flush({ total: 0, items: [] });
+    fixture.detectChanges();
+
+    const chips = (fixture.nativeElement as HTMLElement).querySelectorAll<HTMLButtonElement>('.chip');
+    chips[1].click();
+
+    const request = http.expectOne((r) => r.url === '/api/articles' && r.params.get('theme') === 'sécurité');
+    request.flush({ total: 0, items: [] });
+    expect(request.request.method).toBe('GET');
     http.verify();
   });
 });

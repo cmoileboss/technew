@@ -1,3 +1,3 @@
-from . import articles, feeds
+from . import articles, digest, feeds
 
-__all__ = ["articles", "feeds"]
+__all__ = ["articles", "digest", "feeds"]

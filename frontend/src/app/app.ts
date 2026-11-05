@@ -1,14 +1,21 @@
 import { Component, OnInit, inject, signal } from '@angular/core';
-import { DatePipe } from '@angular/common';
+import { DatePipe, DecimalPipe } from '@angular/common';
 import { HttpErrorResponse } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { Article, Feed, RssApi } from './rss-api';
 
 const PAGE_SIZE = 20;
 
+const THEME_LABELS: Record<string, string> = {
+  'sécurité': 'Sécurité',
+  framework: 'Framework',
+  ia: 'IA',
+  autre: 'Autre',
+};
+
 @Component({
   selector: 'app-root',
-  imports: [FormsModule, DatePipe],
+  imports: [FormsModule, DatePipe, DecimalPipe],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
@@ -21,6 +28,8 @@ export class App implements OnInit {
   protected readonly articles = signal<Article[]>([]);
   protected readonly total = signal(0);
   protected readonly selectedFeedId = signal<number | null>(null);
+  protected readonly selectedTheme = signal<string | null>(null);
+  protected readonly themes = Object.entries(THEME_LABELS).map(([value, label]) => ({ value, label }));
   protected readonly loading = signal(false);
   protected readonly refreshing = signal(false);
   protected readonly message = signal<{ kind: 'info' | 'error'; text: string } | null>(null);
@@ -37,6 +46,15 @@ export class App implements OnInit {
   protected selectFeed(id: number | null): void {
     this.selectedFeedId.set(id);
     this.loadArticles(true);
+  }
+
+  protected selectTheme(theme: string | null): void {
+    this.selectedTheme.set(theme);
+    this.loadArticles(true);
+  }
+
+  protected themeLabel(theme: string): string {
+    return THEME_LABELS[theme] ?? theme;
   }
 
   protected onSearch(): void {
@@ -107,7 +125,13 @@ export class App implements OnInit {
     const offset = reset ? 0 : this.articles().length;
     this.loading.set(true);
     this.api
-      .listArticles({ feedId: this.selectedFeedId(), q: this.query, limit: PAGE_SIZE, offset })
+      .listArticles({
+        feedId: this.selectedFeedId(),
+        theme: this.selectedTheme(),
+        q: this.query,
+        limit: PAGE_SIZE,
+        offset,
+      })
       .subscribe({
         next: (page) => {
           if (id !== this.requestId) return;

@@ -11,11 +11,12 @@ def get_article_service() -> ArticleService:
 
 
 @router.get("/articles", response_model=ArticlePage)
-def list_articles(
+def list_articles( # pylint: disable=too-many-arguments,too-many-positional-arguments
     feed_id: int | None = None,
     q: str | None = Query(None, max_length=200),
+    theme: str | None = Query(None, max_length=50),
     limit: int = Query(30, ge=1, le=100),
     offset: int = Query(0, ge=0),
     service: ArticleService = Depends(get_article_service),
 ):
-    return service.list_articles(feed_id, q, limit, offset)
+    return service.list_articles(feed_id, q, theme, limit, offset)

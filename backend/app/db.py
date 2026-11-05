@@ -3,11 +3,11 @@ from contextlib import AbstractContextManager, contextmanager
 from pathlib import Path
 from typing import Iterator
 
-from sqlalchemy import create_engine, event, func, select
+from sqlalchemy import create_engine, event, func, inspect, select
 from sqlalchemy.engine import Engine, URL
 from sqlalchemy.orm import Session
 
-from .models import Base, Feed
+from .models import Article, Base, Feed
 
 DB_PATH = Path(os.environ.get("TECHNEWS_DB", Path(__file__).resolve().parent.parent / "technews.db"))
 
@@ -33,6 +33,18 @@ def _enable_foreign_keys(connection, _record) -> None:
     cursor.close()
 
 
+def _add_missing_article_columns(engine: Engine) -> None:
+    """create_all() does not alter existing tables: add the columns introduced after the first release."""
+    existing = {column["name"] for column in inspect(engine).get_columns(Article.__tablename__)}
+    with engine.begin() as connection:
+        for column in Article.__table__.columns:
+            if column.name not in existing:
+                column_type = column.type.compile(engine.dialect)
+                connection.exec_driver_sql(
+                    f"ALTER TABLE {Article.__tablename__} ADD COLUMN {column.name} {column_type}"
+                )
+
+
 class Database:
     def __init__(self) -> None:
         self.engine: Engine | None = None
@@ -56,6 +68,7 @@ class Database:
         engine = _create_engine()
         self.engine = engine
         Base.metadata.create_all(engine)
+        _add_missing_article_columns(engine)
 
         with Session(engine) as session:
             if seed and session.scalar(select(func.count()).select_from(Feed)) == 0:

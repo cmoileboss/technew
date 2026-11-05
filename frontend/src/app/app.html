@@ -54,6 +54,21 @@
   </aside>
 
   <main class="content">
+    <div class="themes" role="group" aria-label="Filtrer par thème">
+      <button type="button" class="chip" [class.active]="selectedTheme() === null" (click)="selectTheme(null)">
+        Tous les thèmes
+      </button>
+      @for (theme of themes; track theme.value) {
+        <button
+          type="button"
+          class="chip"
+          [class.active]="selectedTheme() === theme.value"
+          (click)="selectTheme(theme.value)"
+        >
+          {{ theme.label }}
+        </button>
+      }
+    </div>
     <p class="meta">{{ total() }} article(s)</p>
 
     @for (article of articles(); track article.id) {
@@ -62,6 +77,11 @@
           <a [href]="article.link" target="_blank" rel="noopener noreferrer">{{ article.title }}</a>
         </h3>
         <p class="meta">
+          @if (article.theme) {
+            <span class="badge" [title]="'Confiance : ' + ((article.theme_score ?? 0) * 100 | number: '1.0-0') + ' %'">
+              {{ themeLabel(article.theme) }}
+            </span>
+          }
           {{ article.feed_title }}
           @if (article.published_at) {
             · {{ article.published_at | date: 'dd/MM/yyyy HH:mm' }}

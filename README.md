@@ -2,7 +2,7 @@
 
 ## Application (récupération et affichage de flux RSS/Atom)
 
-- `backend/` : API FastAPI (Python) + SQLite. Récupère les flux (httpx + feedparser), stocke les articles et les expose via `/api/feeds`, `/api/articles`, `/api/refresh`.
+- `backend/` : API FastAPI (Python) + SQLite. Récupère les flux (httpx + feedparser), stocke les articles et les expose via `/api/feeds`, `/api/articles`, `/api/refresh`, `/api/digest`.
 - `frontend/` : interface Angular 20 (liste des flux, ajout/suppression, recherche, actualisation, pagination).
 
 ### Lancer le backend
@@ -48,6 +48,28 @@ npm start
 
 L'interface est disponible sur http://localhost:4200 (les appels `/api` sont proxifiés vers le port 8000). Cliquer sur « Actualiser » pour récupérer les derniers articles.
 
+### Digest hebdomadaire (partage de la veille)
+
+`GET /api/digest?days=7` renvoie une synthèse en Markdown (`text/markdown`) des articles publiés sur la période (`days` de 1 à 90, 7 par défaut), regroupés par flux avec lien, date et résumé. Exemple : `curl http://localhost:8000/api/digest > digest.md`.
+
+### Classification par thème (IA)
+
+À chaque ajout de flux et à chaque « Actualiser », les articles sans thème sont classés automatiquement en `sécurité`, `framework`, `ia` ou `autre`. Le thème et un score de confiance sont stockés en base (`articles.theme`, `articles.theme_score`) et exposés par `GET /api/articles` (filtre `?theme=sécurité`) ; l'interface affiche un badge par article et des filtres par thème.
+
+La méthode retenue (embeddings `paraphrase-multilingual-MiniLM-L12-v2` + régression logistique) est la meilleure du benchmark (`benchmark/classification.py`). Les poids du modèle sont dans `backend/app/ml/theme_model.json` ; l'inférence n'utilise que numpy et le modèle d'embeddings, chargé au premier usage.
+
+```powershell
+# Activer la classification (dépendance optionnelle, volumineuse : torch)
+pip install -r backend/requirements-ml.txt
+
+# Réentraîner le modèle après avoir corrigé/complété benchmark/classification_labels.py
+cd benchmark
+pip install -r requirements.txt
+python classification_labels.py    # reconstruit le corpus annoté
+python train_classifier.py         # réécrit backend/app/ml/theme_model.json
+```
+
+Sans `sentence-transformers`, l'application fonctionne normalement : les articles restent sans thème (un avertissement est journalisé). Limites : le thème « réglementaire » n'a pas d'exemple annoté et n'est donc pas prédit ; les classes « ia » et « autre » reposent sur très peu d'exemples.
 
 ### Tests et qualité
 

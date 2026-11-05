@@ -5,12 +5,17 @@ from ..exceptions import ConflictError, NotFoundError, UnprocessableFeedError
 from ..fetcher import FeedError, ParsedFeed, fetch_feed_content, parse_feed
 from ..repositories import ArticleRepository, FeedRepository
 from ..schemas import FeedIn, FeedOut, RefreshResult
+from .classification_service import ClassificationService
 
 FEED_NOT_FOUND = "Flux introuvable."
 
 
 async def _download(url: str) -> ParsedFeed:
     return parse_feed(await fetch_feed_content(url))
+
+
+async def _classify_new_articles() -> None:
+    await asyncio.to_thread(ClassificationService().classify_pending)
 
 
 class FeedService:
@@ -34,7 +39,9 @@ class FeedService:
             feed_id = feeds.create(url, title)
             ArticleRepository(conn).add_many(feed_id, parsed.articles)
             feeds.mark_fetched(feed_id)
-            return FeedOut.model_validate(dict(feeds.get(feed_id)))
+        await _classify_new_articles()
+        with db.connect() as conn:
+            return FeedOut.model_validate(dict(FeedRepository(conn).get(feed_id)))
 
     def delete_feed(self, feed_id: int) -> None:
         with db.connect() as conn:
@@ -61,4 +68,5 @@ class FeedService:
                 else:
                     new_articles += articles.add_many(target["id"], result.articles)
                     feeds.mark_fetched(target["id"])
+        await _classify_new_articles()
         return RefreshResult(new_articles=new_articles, errors=errors)

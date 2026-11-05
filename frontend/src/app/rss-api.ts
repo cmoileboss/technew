@@ -19,6 +19,8 @@ export interface Article {
   link: string;
   summary: string;
   published_at: string | null;
+  theme: string | null;
+  theme_score: number | null;
 }
 
 export interface ArticlePage {
@@ -33,6 +35,7 @@ export interface RefreshResult {
 
 export interface ArticleQuery {
   feedId?: number | null;
+  theme?: string | null;
   q?: string;
   limit?: number;
   offset?: number;
@@ -64,6 +67,7 @@ export class RssApi {
       offset: query.offset ?? 0,
     };
     if (query.feedId != null) params['feed_id'] = query.feedId;
+    if (query.theme) params['theme'] = query.theme;
     if (query.q?.trim()) params['q'] = query.q.trim();
     return this.http.get<ArticlePage>('/api/articles', { params });
   }

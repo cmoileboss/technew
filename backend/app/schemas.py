@@ -23,6 +23,8 @@ class ArticleOut(BaseModel):
     link: str
     summary: str
     published_at: str | None
+    theme: str | None = None
+    theme_score: float | None = None
 
 
 class ArticlePage(BaseModel):
