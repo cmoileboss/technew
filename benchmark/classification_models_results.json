@@ -1,0 +1,114 @@
+[
+  {
+    "représentation": "TF-IDF",
+    "modèle": "Régression logistique",
+    "exactitude": 0.964,
+    "f1_macro": 0.958,
+    "ms_entrainement_par_pli": 52.7,
+    "ms_prediction_par_article": 0.081
+  },
+  {
+    "représentation": "TF-IDF",
+    "modèle": "k plus proches voisins",
+    "exactitude": 0.954,
+    "f1_macro": 0.948,
+    "ms_entrainement_par_pli": 13.0,
+    "ms_prediction_par_article": 0.075
+  },
+  {
+    "représentation": "TF-IDF",
+    "modèle": "SVM (linéaire)",
+    "exactitude": 0.959,
+    "f1_macro": 0.955,
+    "ms_entrainement_par_pli": 30.1,
+    "ms_prediction_par_article": 0.109
+  },
+  {
+    "représentation": "TF-IDF",
+    "modèle": "Arbre de décision",
+    "exactitude": 0.779,
+    "f1_macro": 0.786,
+    "ms_entrainement_par_pli": 25.3,
+    "ms_prediction_par_article": 0.057
+  },
+  {
+    "représentation": "TF-IDF",
+    "modèle": "Forêt aléatoire",
+    "exactitude": 0.897,
+    "f1_macro": 0.89,
+    "ms_entrainement_par_pli": 233.1,
+    "ms_prediction_par_article": 0.309
+  },
+  {
+    "représentation": "TF-IDF",
+    "modèle": "Bayes naïf (multinomial)",
+    "exactitude": 0.764,
+    "f1_macro": 0.682,
+    "ms_entrainement_par_pli": 15.5,
+    "ms_prediction_par_article": 0.059
+  },
+  {
+    "représentation": "TF-IDF",
+    "modèle": "Gradient boosting",
+    "exactitude": 0.887,
+    "f1_macro": 0.879,
+    "ms_entrainement_par_pli": 1945.6,
+    "ms_prediction_par_article": 0.104
+  },
+  {
+    "représentation": "Embeddings",
+    "modèle": "Régression logistique",
+    "exactitude": 0.974,
+    "f1_macro": 0.969,
+    "ms_entrainement_par_pli": 15.8,
+    "ms_prediction_par_article": 0.009
+  },
+  {
+    "représentation": "Embeddings",
+    "modèle": "k plus proches voisins",
+    "exactitude": 0.969,
+    "f1_macro": 0.963,
+    "ms_entrainement_par_pli": 1.6,
+    "ms_prediction_par_article": 0.198
+  },
+  {
+    "représentation": "Embeddings",
+    "modèle": "SVM (RBF)",
+    "exactitude": 0.974,
+    "f1_macro": 0.969,
+    "ms_entrainement_par_pli": 8.1,
+    "ms_prediction_par_article": 0.061
+  },
+  {
+    "représentation": "Embeddings",
+    "modèle": "Arbre de décision",
+    "exactitude": 0.8,
+    "f1_macro": 0.774,
+    "ms_entrainement_par_pli": 32.7,
+    "ms_prediction_par_article": 0.014
+  },
+  {
+    "représentation": "Embeddings",
+    "modèle": "Forêt aléatoire",
+    "exactitude": 0.959,
+    "f1_macro": 0.948,
+    "ms_entrainement_par_pli": 639.0,
+    "ms_prediction_par_article": 0.848
+  },
+  {
+    "représentation": "Embeddings",
+    "modèle": "Bayes naïf (gaussien)",
+    "exactitude": 0.949,
+    "f1_macro": 0.931,
+    "ms_entrainement_par_pli": 1.9,
+    "ms_prediction_par_article": 0.014
+  },
+  {
+    "représentation": "Embeddings",
+    "modèle": "Gradient boosting",
+    "exactitude": 0.892,
+    "f1_macro": 0.872,
+    "ms_entrainement_par_pli": 5030.6,
+    "ms_prediction_par_article": 0.063
+  }
+]

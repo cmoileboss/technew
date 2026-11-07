@@ -1,0 +1,1367 @@
+[
+ {
+  "id": 1,
+  "feed": "Python Insider",
+  "title": "Python 3.15.2, 3.14.10, 3.13.18, 3.12.16 and 3.11.18 are out",
+  "summary": "Five expedited security releases to distrust the compromised eMudhra intermediate CA keys.",
+  "theme": "framework"
+ },
+ {
+  "id": 2,
+  "feed": "Python Insider",
+  "title": "Python 3.15.1, 3.14.9 and 3.13.17 are out",
+  "summary": "Three certified security releases for 3.15, 3.14 and 3.13.",
+  "theme": "framework"
+ },
+ {
+  "id": 3,
+  "feed": "Python Insider",
+  "title": "Python 3.16.0 alpha 1 is now available",
+  "summary": "The first developer preview of Python 3.16 is ready for testing.",
+  "theme": "framework"
+ },
+ {
+  "id": 4,
+  "feed": "Python Insider",
+  "title": "Python 3.15.0 (final) is here!",
+  "summary": "A brand new Python here for you to enjoy!",
+  "theme": "framework"
+ },
+ {
+  "id": 5,
+  "feed": "Python Insider",
+  "title": "Python 3.15.0 candidate 3 is here!",
+  "summary": "Following tradition, a surprise rc3!",
+  "theme": "framework"
+ },
+ {
+  "id": 6,
+  "feed": "Python Insider",
+  "title": "Python 3.10.22, 3.11.17, 3.12.15, 3.13.16 and 3.14.8 are now available!",
+  "summary": "Security updates across Python 3.10–3.14, the final maintenance release of 3.13, and a farewell to Python 3.10.",
+  "theme": "framework"
+ },
+ {
+  "id": 7,
+  "feed": "Python Insider",
+  "title": "Python Language Summit 2026",
+  "summary": "The 2026 Python Language Summit was hosted in Kraków, Poland as part of EuroPython 2026. There were 15 talks covering free-threading, Rust, garbage collection, type annotations, and more.",
+  "theme": "framework"
+ },
+ {
+  "id": 8,
+  "feed": "Python Insider",
+  "title": "Lightning Talks (Python Language Summit 2026)",
+  "summary": "Lightning talks on a one-time ABI break, safer interruptions, EktuPy (Scratch but Python), an AGENTS.md file for CPython, and a call to read PEP 836.",
+  "theme": "framework"
+ },
+ {
+  "id": 9,
+  "feed": "Python Insider",
+  "title": "PEP 827: Type Manipulation (Python Language Summit 2026)",
+  "summary": "Michael J. Sullivan presents PEP 827 and discusses a key design decision: how to store type annotations?",
+  "theme": "framework"
+ },
+ {
+  "id": 10,
+  "feed": "Python Insider",
+  "title": "Free-Threaded Python Post-Era (Python Language Summit 2026)",
+  "summary": "Tobias Wrigstad, Fridtjof Stoldt, and Donghee Na propose a safe and performant, high-level concurrency model for free-threaded Python",
+  "theme": "framework"
+ },
+ {
+  "id": 11,
+  "feed": "Python Insider",
+  "title": "Developer-in-Residence Update & Future (Python Language Summit 2026)",
+  "summary": "Petr Viktorin gives an update on the Developer-in-Residence role and asks Python core developers for projects to prioritize",
+  "theme": "framework"
+ },
+ {
+  "id": 12,
+  "feed": "Python Insider",
+  "title": "Spicycrab (Python Language Summit 2026)",
+  "summary": "Kushal Das shows off Spicycrab, a Python-to-Rust transpiler for Python users who need performance without learning Rust or leaving Python",
+  "theme": "framework"
+ },
+ {
+  "id": 13,
+  "feed": "Python Insider",
+  "title": "Rust for CPython (Python Language Summit 2026)",
+  "summary": "David Hewitt shares a status update, first module, and potential acceptance criteria for the Rust for CPython project",
+  "theme": "framework"
+ },
+ {
+  "id": 14,
+  "feed": "Python Insider",
+  "title": "Memory Snapshots for CPython (Python Language Summit 2026)",
+  "summary": "Hood Chatham proposes memory snapshots and an initialization phase for speedier Python startups",
+  "theme": "framework"
+ },
+ {
+  "id": 15,
+  "feed": "Python Insider",
+  "title": "Memory Buffer Protocol (Python Language Summit 2026)",
+  "summary": "Nathan Goldbaum proposes safe concurrent access through buffer leases and custom data types for the Python Buffer Protocol.",
+  "theme": "framework"
+ },
+ {
+  "id": 16,
+  "feed": "Python Insider",
+  "title": "Garbage Collection: Generational? Incremental? Both! (Python Language Summit 2026)",
+  "summary": "Mark Shannon proposes a future garbage collection strategy for Python following the revert of the incremental garbage collector in Python 3.14",
+  "theme": "framework"
+ },
+ {
+  "id": 17,
+  "feed": "Python Insider",
+  "title": "macOS and Python (Python Language Summit 2026)",
+  "summary": "Ned Deily weighs whether Python should continue shipping macOS installers",
+  "theme": "framework"
+ },
+ {
+  "id": 18,
+  "feed": "Python Insider",
+  "title": "One namespace to namespace them all (Python Language Summit 2026)",
+  "summary": "Pablo Galindo Salgado proposes a top-level `std` namespace for the Python standard library to prevent module shadowing and free up module names.",
+  "theme": "framework"
+ },
+ {
+  "id": 21,
+  "feed": "Python Insider",
+  "title": "Python 3.15.0 candidate 2 is here!",
+  "summary": "Last chance to test before the big day!",
+  "theme": "framework"
+ },
+ {
+  "id": 22,
+  "feed": "Python Insider",
+  "title": "RISC-V is now officially supported by CPython!",
+  "summary": "I’m happy to announce that RISC-V platforms are now officially supported by CPython. 🎉 🚀",
+  "theme": "framework"
+ },
+ {
+  "id": 25,
+  "feed": "Python Insider",
+  "title": "Python 3.12.14, 3.11.16 and 3.10.21 are now available!",
+  "summary": "[Python Releases Eclipse Your Security!](https://discuss.python.org/t/python-3-12-14-3-11-16-and-3-10-21-are-now-available/108537) New security releases for 3.10, 3.11 and 3.12 are now available.",
+  "theme": "framework"
+ },
+ {
+  "id": 26,
+  "feed": "Python Insider",
+  "title": "Python 3.14.7 and 3.13.15 are now available!",
+  "summary": "A pair of bug fix releases await your upgrade.",
+  "theme": "framework"
+ },
+ {
+  "id": 27,
+  "feed": "Python Insider",
+  "title": "Python 3.15.0 candidate 1 is here!",
+  "summary": "Get those wheels rolling!",
+  "theme": "framework"
+ },
+ {
+  "id": 29,
+  "feed": "Python Insider",
+  "title": "Python 3.15.0 beta 4 is here!",
+  "summary": "The final 3.15 beta is out!",
+  "theme": "framework"
+ },
+ {
+  "id": 32,
+  "feed": "Python Insider",
+  "title": "Python 3.15.0 beta 3 is here!",
+  "summary": "The penultimate 3.15 beta is out!",
+  "theme": "framework"
+ },
+ {
+  "id": 33,
+  "feed": "Python Insider",
+  "title": "Python 3.14.6 and 3.13.14 are now available!",
+  "summary": "A pair of bug fix releases await your upgrade.",
+  "theme": "framework"
+ },
+ {
+  "id": 34,
+  "feed": "Python Insider",
+  "title": "Python 3.15.0 beta 2 is here!",
+  "summary": "The antepenultimate 3.15 beta is out!",
+  "theme": "framework"
+ },
+ {
+  "id": 35,
+  "feed": "Python Insider",
+  "title": "Python 3.14.5 is out!",
+  "summary": "A special release with a new (old) garbage collector.",
+  "theme": "framework"
+ },
+ {
+  "id": 36,
+  "feed": "Python Insider",
+  "title": "Python 3.15.0 beta 1 is here!",
+  "summary": "The propreantepenultimate 3.15 beta is out!",
+  "theme": "framework"
+ },
+ {
+  "id": 37,
+  "feed": "Python Insider",
+  "title": "Python 3.14.5 release candidate",
+  "summary": "A special release candidate with a new (old) garbage collector.",
+  "theme": "framework"
+ },
+ {
+  "id": 38,
+  "feed": "Python Insider",
+  "title": "Rust for CPython Progress Update April 2026",
+  "summary": "Rust for CPython project status update April 2026",
+  "theme": "framework"
+ },
+ {
+  "id": 39,
+  "feed": "Python Insider",
+  "title": "Python 3.15.0a8, 3.14.4 and 3.13.13 are out!",
+  "summary": "A final alpha and two bug fixes are awaiting your upgrade.",
+  "theme": "framework"
+ },
+ {
+  "id": 40,
+  "feed": "Python Insider",
+  "title": "Python 3.15's JIT is now back on track",
+  "summary": "A look at Python's JIT in 3.15a7.",
+  "theme": "framework"
+ },
+ {
+  "id": 41,
+  "feed": "Python Insider",
+  "title": "Python 3.15.0 alpha 7",
+  "summary": "The penultimate 3.15 alpha is out!",
+  "theme": "framework"
+ },
+ {
+  "id": 43,
+  "feed": "Python Insider",
+  "title": "Python 3.12.13, 3.11.15 and 3.10.20 are now available!",
+  "summary": "[Python Releases For Your Security!](https://discuss.python.org/t/python-3-12-13-3-11-15-and-3-10-20-are-now-available/106363) New security releases for 3.10, 3.11 and 3.12 are now available.",
+  "theme": "framework"
+ },
+ {
+  "id": 45,
+  "feed": "Python Insider",
+  "title": "Join the Python Security Response Team!",
+  "summary": "The Python Security Response Team now has an approved public governance document (PEP 811) and is welcoming new members.",
+  "theme": "sécurité"
+ },
+ {
+  "id": 46,
+  "feed": "Python Insider",
+  "title": "Python 3.15.0 alpha 6",
+  "summary": "This is an early developer preview of Python 3.15 www.python.org/downloads/release/python-3150a6/ Major new features of the 3.15 series, compared to 3.14 Pyt...",
+  "theme": "framework"
+ },
+ {
+  "id": 47,
+  "feed": "Python Insider",
+  "title": "Python 3.14.3 and 3.13.12 are now available!",
+  "summary": "Python 3.14.3 is now available! This is third maintenance release of Python 3.14 Python 3.14.3 is the third maintenance release of 3.14, containing around ...",
+  "theme": "framework"
+ },
+ {
+  "id": 48,
+  "feed": "Python Insider",
+  "title": "Python 3.15.0 alpha 5 (yes, another alpha!)",
+  "summary": "Note: 3.15.0a4 was accidentally built against from 2025-12-23 instead of 2026-01-13, so this 3.15.0a5 is an extra release correctly built against 2026-01-14...",
+  "theme": "framework"
+ },
+ {
+  "id": 49,
+  "feed": "Python Insider",
+  "title": "Python 3.15.0 alpha 4",
+  "summary": "Edit: This 3.15.0a4 was accidentally built against \\ from 2025-12-23 instead of 2026-01-13, so 3.15.0a5 is an extra release correctly built against 2026-01-1...",
+  "theme": "framework"
+ },
+ {
+  "id": 50,
+  "feed": "Python Insider",
+  "title": "Python 3.15.0 alpha 3",
+  "summary": "This is an early developer preview of Python 3.15 www.python.org/downloads/release/python-3150a3/ Major new features of the 3.15 series, compared to 3.14 Pyt...",
+  "theme": "framework"
+ },
+ {
+  "id": 51,
+  "feed": "The Hacker News",
+  "title": "CVSS 10.0 LXD, MicroCloud Flaw Lets Attackers Impersonate Trusted Clients Without a Private Key",
+  "summary": "A critical flaw in Canonical's LXD and MicroCloud let an attacker log in as a trusted client without holding that client's private key. To do it, the attacker had to reach their HTTPS API over the network and have the trusted client's public certificate. Once in, the attacker would act as that client, with access to the cluster and its virtual machines. If the impersonated account is",
+  "theme": "sécurité"
+ },
+ {
+  "id": 52,
+  "feed": "The Hacker News",
+  "title": "Hackers Steal About $2.7 Million From Polymarket Traders via Hijacked DebugBear Script",
+  "summary": "Malicious code on the website of prediction market Polymarket sold some signed-in traders' positions and moved their funds to the hackers on October 29. The code had replaced a page-speed script that the site loaded from an outside company. Polymarket says it is refunding about $2.7 million to 726 affected wallets. Blockchain records show crypto worth about $2.64 million reached",
+  "theme": "sécurité"
+ },
+ {
+  "id": 53,
+  "feed": "The Hacker News",
+  "title": "FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist",
+  "summary": "The U.S. Federal Bureau of Investigation (FBI) has officially attributed the theft of more than $6 billion in virtual assets to TraderTraitor, a North Korea-aligned elite hacking group also tracked as Jade Sleet, Pressure Chollima, PUKCHONG, Slow Pisces, and UNC4899. The FBI, along with the U.S. Secret Service (USSS) and the Internal Revenue Service Criminal Investigation (IRS-CI), said it",
+  "theme": "sécurité"
+ },
+ {
+  "id": 54,
+  "feed": "The Hacker News",
+  "title": "NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection",
+  "summary": "Cybersecurity researchers have disclosed details of what has been described as a \"highly sophisticated infection chain\" targeting government organizations in Asia. The activity, detailed by Kaspersky this week, targeted a custom Windows 10 build used exclusively by government entities in Asia and involves the deployment of a previously undocumented .NET assembly-loading framework codenamed",
+  "theme": "sécurité"
+ },
+ {
+  "id": 55,
+  "feed": "The Hacker News",
+  "title": "Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data",
+  "summary": "American blockchain analysis firm Chainalysis said it was the target of a cybersecurity incident in which an external actor accessed non-sensitive customer data. However, the company noted that the breach did not result in unauthorized access to its investigation content, authentication credentials, or session tokens. \"This month, Chainalysis detected an external actor using offensive agentic",
+  "theme": "sécurité"
+ },
+ {
+  "id": 56,
+  "feed": "The Hacker News",
+  "title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
+  "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two security flaws impacting Ivanti Connect Secure (ICS) to its Known Exploited Vulnerabilities (KEV) catalog, following active exploitation in the wild. The vulnerabilities are listed below - CVE-2026-111357 (CVSS score: 8.8) - A missing authentication for a critical function vulnerability that could allow a",
+  "theme": "sécurité"
+ },
+ {
+  "id": 57,
+  "feed": "The Hacker News",
+  "title": "A Shared ChatGPT Link Could Run Attacker Code in Your Session and Read Private Chats",
+  "summary": "A malicious ChatGPT share link could run an attacker's code in the logged-in session of anyone who opened it, allowing them to read their private conversations, researchers at the security firm Parameter showed. The researchers reported the flaw through OpenAI's bug bounty program on October 18, and OpenAI fixed it eight days later and rated it P1, its most serious category.",
+  "theme": "sécurité"
+ },
+ {
+  "id": 58,
+  "feed": "The Hacker News",
+  "title": "Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks in Q3, Up 38%",
+  "summary": "Threat actors are launching about 8,226 network-layer distributed denial-of-service (DDoS) attacks per hour, Cloudflare revealed Thursday. The web infrastructure and security company said it autonomously mitigated 18.2 million network-layer (L3) DDoS attacks and 14.4 trillion HTTP DDoS requests in the third quarter of 2026. That amounts to 197,400 attacks per day, or one attack every 0.44",
+  "theme": "sécurité"
+ },
+ {
+  "id": 59,
+  "feed": "The Hacker News",
+  "title": "Chinese Hackers Use AI-Powered ARTEX to Target Over 200 Organizations Worldwide",
+  "summary": "Chinese state-sponsored threat actors have been observed using a Go-based artificial intelligence (AI)-powered penetration testing framework called ARTEX in attacks aimed at high-value targets simultaneously. The activity has been attributed by CrowdStrike to a China-based \"targeted intrusion adversary\" it tracks under the moniker Vapor Panda (previously VexatiousTemper). First identified in",
+  "theme": "sécurité"
+ },
+ {
+  "id": 60,
+  "feed": "The Hacker News",
+  "title": "TeamViewer Flaw Lets Remote Computers Attack Users Who Connect to Control Them",
+  "summary": "TeamViewer has fixed a flaw that lets the machine being controlled in a remote session attack the computer that connected to control it. In a TeamViewer session, the computer that connects and takes control is the viewer, and the machine it controls is the host. A malicious or compromised host can exploit the flaw to crash the viewer's TeamViewer and, depending on the platform, may also run",
+  "theme": "sécurité"
+ },
+ {
+  "id": 61,
+  "feed": "The Hacker News",
+  "title": "WordPress RCE Flaw Draws Nearly 63,000 Attack Attempts in Just 24 Hours",
+  "summary": "Threat actors have been observed attempting to exploit a high-severity security flaw in WordPress Core shortly after patches were released. The vulnerability, which does not have a CVE identifier, relates to a case of remote code execution impacting WordPress Core versions 4.7 through 7.1.3. It carries a CVSS score of 8.1 on the CVSS scoring system. Patches for the flaw were released on October",
+  "theme": "sécurité"
+ },
+ {
+  "id": 62,
+  "feed": "The Hacker News",
+  "title": "Trezor Warns of Suspected Hardware Implant in One of Its Wallets Sold by CryptoBilis",
+  "summary": "A Trezor Safe 5 hardware wallet bought from the reseller CryptoBilis has an extra circuit board that sends out the recovery phrase over a mobile network, a customer has reported. Trezor has not yet examined the device. It is telling everyone who bought a Trezor from CryptoBilis since March 2026 to move their funds to a new wallet with a new recovery phrase. Trezor said in a blog post",
+  "theme": "sécurité"
+ },
+ {
+  "id": 63,
+  "feed": "The Hacker News",
+  "title": "Why Urgent Security Fixes Aren't Fixed. Observe, Prove, Act, Confirm Gets Them Moving",
+  "summary": "The alert is critical. The fix is known. And the ticket sits in a queue for days. Security teams understand the risk, but the people who keep applications available need proof that the change won’t break anything. Their concerns are practical. An IPS protection could block legitimate traffic. A configuration change could interrupt a service. An endpoint policy could affect an application",
+  "theme": "sécurité"
+ },
+ {
+  "id": 64,
+  "feed": "The Hacker News",
+  "title": "Syrian Hacker Behind Fake Tweet That Triggered $136 Billion Market Drop Gets 42 Months in Prison",
+  "summary": "Ahmad Umar Agha, a Syrian Electronic Army hacker known online as \"Th3Pr0,\" has been sentenced by a U.S. federal court to 42 months in prison for his role in a hacking conspiracy that targeted Western news outlets. The conspiracy was organized and led by members of former Syrian President Bashar al-Assad's inner circle, including the commander of Syria's General Intelligence",
+  "theme": "sécurité"
+ },
+ {
+  "id": 65,
+  "feed": "The Hacker News",
+  "title": "Official Claude Code Extension on Cursor Marketplace Trojanized with Persistent SSH Backdoor",
+  "summary": "Cybersecurity researchers have disclosed that a trojanized version of Anthropic's official Claude Code extension was distributed through the Cursor Marketplace as a legitimate update, attempting to install a persistent SSH backdoor on affected systems. The malicious update, version 2.1.313, was distributed under the extension's legitimate publisher identity, prompting Cursor to temporarily shut",
+  "theme": "sécurité"
+ },
+ {
+  "id": 66,
+  "feed": "The Hacker News",
+  "title": "Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw",
+  "summary": "Drupal has warned that threat actors are exploiting a \"highly critical\" security flaw in its Commerce Core component. The vulnerability, tracked as CVE-2026-118539 (CVSS score: N/A), is a case of missing authorization affecting Commerce Core versions from 0.0.0 to 2.41 and from 3.0.0 to 3.3.13. \"This module enables you to sell goods and services to customers through an included shopping cart",
+  "theme": "sécurité"
+ },
+ {
+  "id": 67,
+  "feed": "The Hacker News",
+  "title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
+  "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Cisco and GitLab software to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation. The vulnerabilities are listed below - CVE-2026-97229 (CVSS score: 10.0) - An integer overflow or wraparound vulnerability in GitLab Community Edition and Enterprise",
+  "theme": "sécurité"
+ },
+ {
+  "id": 68,
+  "feed": "The Hacker News",
+  "title": "Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen",
+  "summary": "Cryptocurrency giant Binance said on Thursday that a \"security incident\" on its platform has impacted about $6.3 billion worth of assets. The world's biggest cryptocurrency exchange said nearly $3 billion of those assets have been frozen on-chain so far. Tether and Circle said they have frozen more than 1.567 billion USDT and 800 million USDC related to the incident, respectively. The",
+  "theme": "sécurité"
+ },
+ {
+  "id": 69,
+  "feed": "The Hacker News",
+  "title": "ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories",
+  "summary": "Some attacks take real skill. Others just need someone to leave a door open. This week has both. Exposed passwords, old bugs still getting exploited, and trusted software doing things it shouldn't. There's a strange mix of clever tricks and careless mistakes. Hackers are borrowing trust from familiar apps, websites, and AI tools. Some are using AI to speed things up. Others are leaving their",
+  "theme": "sécurité"
+ },
+ {
+  "id": 70,
+  "feed": "The Hacker News",
+  "title": "Linux Kernel TCP Flaw With 9.8 CVSS Score Affects Ubuntu, Red Hat and Other Distributions",
+  "summary": "A flaw in the Linux kernel's TCP code, tracked as CVE-2026-98432, affects Ubuntu, Red Hat Enterprise Linux (RHEL), and other Linux distributions. The kernel's own CVE team rates it 9.8 out of 10 on the CVSS scale. Anthropic said on October 27 that its AI model wrote an exploit that uses the flaw to let a remote attacker with no credentials run commands as root on Linux servers with a",
+  "theme": "sécurité"
+ },
+ {
+  "id": 71,
+  "feed": "The Hacker News",
+  "title": "Fake ChatGPT and Claude Apps Abuse Signed Executables to Deploy Crypto Miners",
+  "summary": "Threat actors are delivering malicious loaders and cryptocurrency miners under the guise of artificial intelligence (AI) desktop applications for Anthropic Claude and OpenAI ChatGPT as part of a campaign dubbed Yoba. The activity involves creating fake GitHub projects that claim to be desktop applications like GPT-5.6 Sol, GPT-6 Astra, and Claude Opus, only to deliver a malware family called",
+  "theme": "sécurité"
+ },
+ {
+  "id": 72,
+  "feed": "The Hacker News",
+  "title": "Google's Gemini 4 Carbon Leads Benchmarks for Finding, Exploiting, and Patching Vulnerabilities",
+  "summary": "Google on Wednesday took the wraps off Gemini 4 Carbon, its latest frontier model with state-of-the-art cybersecurity and long-horizon capabilities. \"It shows significant gains across coding and agentic tasks as well as across key capabilities critical for cybersecurity defense, landing a firm lead in SEC-bench Pro (88.2%) for finding vulnerabilities, ExploitGym (54.8%) for exploitation, and",
+  "theme": "ia"
+ },
+ {
+  "id": 74,
+  "feed": "The Hacker News",
+  "title": "Telegram Android Flaw Lets Attackers Run Code When Users Answer Voice Calls",
+  "summary": "A flaw in Telegram for Android could be chained with two other bugs to take full control of a victim's phone through a voice call, once the victim answered, according to security startup NebuSec. The attacker needed only an ordinary Telegram account. Telegram fixed the flaw in version 12.10.4 of the app, released in late September, and NebuSec disclosed it on October 29. Combined with an",
+  "theme": "sécurité"
+ },
+ {
+  "id": 76,
+  "feed": "The Hacker News",
+  "title": "26,400 Valid Cloud and AI Credentials Found Exposed in Public Gitee Repositories",
+  "summary": "26,400 credentials that developers left in public code on Gitee, a Chinese code-hosting service, still worked when a researcher tested them. Anyone who copied one from that code could have used it. Independent researcher Ben Zimmermann found them by scanning 7.25 million public Gitee repositories and reported the results on October 28. Most were keys for cloud and AI services, led by",
+  "theme": "sécurité"
+ },
+ {
+  "id": 77,
+  "feed": "The Hacker News",
+  "title": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
+  "summary": "Cisco has released patches to address a high-severity security flaw in Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software that it said has been exploited in the wild. The vulnerability, tracked as CVE-2026-76418, is rated 8.6 on the CVSS scoring system. Successful exploitation could allow an unauthenticated, remote attacker to cause the",
+  "theme": "sécurité"
+ },
+ {
+  "id": 78,
+  "feed": "The Hacker News",
+  "title": "GitHub Launches npm Firewall to Block Malicious Packages Before Installation",
+  "summary": "GitHub has announced that it's introducing a new package firewall as a preview to block installation of suspicious npm packages during installation time. \"The firewall inspects both metadata requests and package downloads for signs of malicious activity, acting as an install-time policy gate,\" GitHub said. The feature, which currently supports only npm packages, is available in public preview",
+  "theme": "sécurité"
+ },
+ {
+  "id": 79,
+  "feed": "The Hacker News",
+  "title": "Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open",
+  "summary": "An attacker tried to exploit a critical GitLab vulnerability on the Alpine Linux project's own GitLab server a week after GitLab released a fix, Alpine Linux said on 28 October. The flaw, CVE-2026-97229 (CVSS score: 10.0), can let an attacker run code on a GitLab server through a crafted regular expression in a CI configuration. Alpine found no evidence that the attack worked but",
+  "theme": "sécurité"
+ },
+ {
+  "id": 80,
+  "feed": "The Hacker News",
+  "title": "Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys",
+  "summary": "Hackers exploited a critical Cisco Catalyst SD-WAN flaw, fixed in February, to plant custom malware inside the systems that control an organization's SD-WAN network. The malware, called KeyDrift, is designed to copy the keys that encrypt traffic between sites and store them for later use, Cisco Talos said on October 28. Talos calls the attacks historical but does not specify when they",
+  "theme": "sécurité"
+ },
+ {
+  "id": 81,
+  "feed": "The Hacker News",
+  "title": "China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility",
+  "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a security flaw impacting Broadcom VMware ESX to its Known Exploited Vulnerabilities (KEV) catalog, after CrowdStrike revealed that it had been weaponized by a China-nexus threat actor known as Warp Panda in attacks targeting the U.S. legal sector. The vulnerability in question is CVE-2026-41709 (CVSS score:",
+  "theme": "sécurité"
+ },
+ {
+  "id": 82,
+  "feed": "The Hacker News",
+  "title": "Attackers Exploit PHP2Shell Flaws in Internet-Exposed Palo Alto Networks Management Interfaces",
+  "summary": "Palo Alto Networks on Wednesday warned that threat actors are exploiting the recently patched PHP2Shell vulnerabilities against publicly-accessible management interfaces. \"Active exploitation has been observed targeting the Palo Alto Networks management interface exposed to the internet,\" the network security company said in an update to its advisory. The vulnerabilities, tracked as",
+  "theme": "sécurité"
+ },
+ {
+  "id": 83,
+  "feed": "The Hacker News",
+  "title": "Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns",
+  "summary": "The China-nexus cyber espionage group known as Volt Typhoon has been attributed to a now-disrupted covert access network dubbed Silent Train that has been put to use for zero-day exploitation and strategic access. \"First identified in late 2023, Silent Train uses rotating chains of compromised SOHO, IoT, and enterprise infrastructure,\" Lumen Technologies Black Lotus Labs said in a report shared",
+  "theme": "sécurité"
+ },
+ {
+  "id": 85,
+  "feed": "The Hacker News",
+  "title": "Researcher Reveals How Logic Bugs Alone Cracked Microsoft Edge in $175,000 Pwn2Own Win",
+  "summary": "A chain of logic flaws, with no memory corruption, can turn a malicious web page into code running on a Windows computer outside Microsoft Edge's sandbox, a security researcher has shown. Orange Tsai of DEVCORE published the full method on October 28, five months after the chain won $175,000 at the Pwn2Own Berlin contest in May. Microsoft fixed the Edge bugs the day after the contest,",
+  "theme": "sécurité"
+ },
+ {
+  "id": 86,
+  "feed": "The Hacker News",
+  "title": "PHP2Shell Attack Roots 25 Servers, Breaches U.S. Government-Affiliated Network",
+  "summary": "Cybersecurity researchers have disclosed details of what appears to be an artificial intelligence (AI)-assisted attack orchestrated by a suspected China-nexus threat actor that has leveraged the PHP2Shell vulnerabilities to breach exposed systems. The activity, which was observed on October 25, 2026, involved an attacker combining PHP2Shell with a kernel privilege escalation exploit to root",
+  "theme": "sécurité"
+ },
+ {
+  "id": 87,
+  "feed": "The Hacker News",
+  "title": "Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch",
+  "summary": "Threat actors are beginning to probe for a newly patched critical vulnerability in Oracle E-Business Suite (EBS), according to threat intelligence firm Defused Cyber. The vulnerability in question is CVE-2026-101767 (CVSS score: 9.8) , a case of improper authentication in the Oracle Application Object Library of Oracle E-Business Suite. It was patched by Oracle last week as part of its Critical",
+  "theme": "sécurité"
+ },
+ {
+  "id": 88,
+  "feed": "The Hacker News",
+  "title": "Critical 16-Year-Old UEFI Flaw Can Run Code Before Secure Boot on Network-Booting Servers",
+  "summary": "A critical 16-year-old flaw in EDK II, the open-source code that most hardware makers use to build UEFI firmware, can allow an attacker to run code on a machine before its operating system loads, but only while the machine is booting over the network. UEFI firmware is the software that runs first when a computer is switched on, before the operating system. An attacker who can reach the machine",
+  "theme": "sécurité"
+ },
+ {
+  "id": 89,
+  "feed": "The Hacker News",
+  "title": "Wazuh and AI for Enhanced SOC Workflows",
+  "summary": "Artificial Intelligence (AI) has become one of this decade's defining technologies. From healthcare and finance to manufacturing and education, organizations increasingly rely on AI to automate repetitive tasks, uncover patterns hidden within large datasets, and support faster decision-making. Cybersecurity has experienced a similar transformation. While attackers employ AI to automate",
+  "theme": "ia"
+ },
+ {
+  "id": 90,
+  "feed": "The Hacker News",
+  "title": "Adobe Fixes 8 Critical Campaign Classic Flaws Allowing Code Execution and Security Bypass",
+  "summary": "Adobe has released patches to address multiple critical security flaws in Campaign Classic that, if successfully exploited, could result in arbitrary code execution, security feature bypass, and privilege escalation. The list of eight vulnerabilities is as follows - CVE-2026-104351 (CVSS score: 9.9) - A code injection vulnerability that could lead to arbitrary code execution.",
+  "theme": "sécurité"
+ },
+ {
+  "id": 91,
+  "feed": "The Hacker News",
+  "title": "American Organizations Under Attack: Skyw4lker Device Code Phishing Campaign Exposed",
+  "summary": "Modern phishing campaigns can compromise American businesses without relying on traditional credential theft. Attackers can abuse legitimate cloud services, authentication mechanisms, and trusted business workflows to gain access to corporate accounts while leaving fewer obvious signs behind. ANY.RUN's analysis of Skyw4lker, a device code phishing campaign primarily targeting U.S. organizations",
+  "theme": "sécurité"
+ },
+ {
+  "id": 92,
+  "feed": "The Hacker News",
+  "title": "Anthropic's Unreleased AI Model Chains Flaws Into Working Chrome, Safari, Windows and Linux Exploits",
+  "summary": "An unreleased Anthropic AI model found security flaws in Chrome, Safari, Android, Windows, and Linux and chained them into working proof-of-concept exploits, the company said in its latest report. The exploits were built in the lab after the model was prompted, not seen in any real attack, and Anthropic reported every flaw to the vendor first, so all of them are already patched. One proof of",
+  "theme": "ia"
+ },
+ {
+  "id": 93,
+  "feed": "The Hacker News",
+  "title": "FBI Seizes Virtualine Domain Over Alleged Criminal Hosting and Bitcoin Money Laundering",
+  "summary": "The U.S. Department of Justice (DoJ) on Tuesday announced the seizure of a domain associated with a bulletproof hosting provider (BPH) named Virtualine. The move was in response to the service being used to commit and facilitate prolific criminal activity, including \"the advertisement of sexually explicit images of minors, the intentional disclosure of nonconsensual intimate visual depictions",
+  "theme": "sécurité"
+ },
+ {
+  "id": 94,
+  "feed": "The Hacker News",
+  "title": "Japan's GMO Offers $1 Million Bounty to Catch Hackers Behind FX Trading Cloud Breach",
+  "summary": "Japan's GMO Internet Group is offering up to $1 million in total for tips that help catch the attackers who breached its Onamae.com Desktop Cloud service, after refusing to pay an extortion demand. The reward program opened on October 28 and pays only if a tip helps lead to an arrest or an international wanted notice. The service hosts Windows desktops used for FX trading,",
+  "theme": "sécurité"
+ },
+ {
+  "id": 95,
+  "feed": "The Hacker News",
+  "title": "Tailscale Patches SSH Flaws That Could Let Hacked Devices Gain Root Access on Other Servers",
+  "summary": "Tailscale has released version 1.104.4 to fix flaws in its built-in SSH server that could let an attacker reach services and files on other servers that only the root user should be able to touch. The flaws are in how Tailscale SSH forwards network connections, a job the Tailscale background process carries out with root privileges. To use them, an attacker must",
+  "theme": "sécurité"
+ },
+ {
+  "id": 96,
+  "feed": "The Hacker News",
+  "title": "ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws",
+  "summary": "The critical Oracle PeopleSoft bug that ShinyHunters has exploited since May is not one flaw but three chained together, the researchers who reported it said this week. Oracle patched all three under a single identifier, CVE-2026-35273, in June. Its root is a server-side request forgery (SSRF) that reaches an internal management interface because PeopleSoft trusts its own loopback address",
+  "theme": "sécurité"
+ },
+ {
+  "id": 97,
+  "feed": "The Hacker News",
+  "title": "Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges",
+  "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added two vulnerabilities impacting Adobe Commerce and Magento, and Google's Brotli decoder library to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The vulnerabilities are listed below - CVE-2026-111497 (CVSS score: 9.2) - An unchecked return value vulnerability in",
+  "theme": "sécurité"
+ },
+ {
+  "id": 98,
+  "feed": "The Hacker News",
+  "title": "CyberStrikeAI Uses 44 AI Agents to Automate Hacking Operations Against Japan Targets",
+  "summary": "Cybersecurity researchers have disclosed details of three cyber attacks targeting organizations in Japan in which artificial intelligence (AI) was a key element, either in the driving seat or to assist a human operator. TrendAI, which analyzed three exposed server environments used by threat actors to conduct the malicious cyber operations, described them as distinct from previously published",
+  "theme": "sécurité"
+ },
+ {
+  "id": 99,
+  "feed": "The Hacker News",
+  "title": "GoAhead TLS Flaws Allow Revoked Client Certificates and Enable Session Decryption",
+  "summary": "The GoAhead embedded web server loaded a certificate revocation list into its default TLS backend but never turned revocation checking on, so a revoked client certificate could still pass login on affected setups. The flaw is in builds that use the OpenSSL backend with mutual-TLS, where the server checks a client certificate and vice versa, and a revocation list is configured to block revoked",
+  "theme": "sécurité"
+ },
+ {
+  "id": 100,
+  "feed": "The Hacker News",
+  "title": "Apple Backports Fix for Exploited CoreGraphics Flaw to Older iPhones and iPads",
+  "summary": "Apple on Monday backported fixes for a high-severity security flaw that was exploited in real-world cyber attacks to older devices. The vulnerability, tracked as CVE-2026-86950 (CVSS score: 8.8), is an out-of-bounds write affecting CoreGraphics that could result in arbitrary code execution when processing a maliciously crafted file. Patches for the flaw were released last month by Apple in",
+  "theme": "sécurité"
+ },
+ {
+  "id": 101,
+  "feed": "Spring Blog",
+  "title": "A Bootiful Podcast: 'Data Geekery' with JOOQ creator Lukas Eder",
+  "summary": "Hi, Spring fans! In this conversation, Josh Long explores how JOOQ turns SQL into a type-safe, fluent Java language—making complex database work safer, cleaner, and far more expressive. They cover everything from dynamic SQL transformation and cross-dialect support to low-level security, stored procedures, views, and the realities of working with modern databases like DuckDB, ClickHouse, Redshift, and more. Along the way, Lucas reflects on the origins of JOOQ, why he built it, and how the proje…",
+  "theme": "framework"
+ },
+ {
+  "id": 102,
+  "feed": "Spring Blog",
+  "title": "Spring AI 2.1 Message Parts: Reasoning That Survives the Round Trip",
+  "summary": "Spring AI: Message Parts Doc | Upgrade Notes | OpenAI Responses Doc | Session Doc Reasoning models do more than think before they answer. They hand part of that thinking back to you and expect to get it back on the next request. Claude signs its thinking blocks. Gemini attaches thought signatures to its function calls. OpenAI's Responses API returns encrypted reasoning items. If you drop, reorder or edit them, the result ranges from an HTTP 400 to a model that quietly loses its earlier reasonin…",
+  "theme": "ia"
+ },
+ {
+  "id": 103,
+  "feed": "Spring Blog",
+  "title": "Using Your Own Embeddings in Spring AI 2.1",
+  "summary": "VectorStore.add() takes text documents, generates embeddings with the store's configured model, and saves both. Spring AI 2.1 adds upsert for applications that already have embeddings or generate them from images, video, or audio. It accepts documents paired with application-supplied vectors, without calling the store's embedding model. A new similaritySearch overload also accepts a query embedding, giving applications control over both indexing and searching. When to supply your own embeddings…",
+  "theme": "ia"
+ },
+ {
+  "id": 104,
+  "feed": "Spring Blog",
+  "title": "This Week in Spring - October 27th, 2026",
+  "summary": "Hi, Spring fans! Welcome to another installment of This Week in Spring , which I write from the paradise-like environs Barcelona, Spain, where I was lucky enough to be a part of the amazing Vaadin Create event today and tomorrow. It's been an amazing few days, but those few days are just a small part of the week, and what a week it's been! Let's dive into the the weekly roundup! yet another amazing post from Craig Walls in his ongoing series looking at Spring Ai - Speeding Up RAG with Faster Em…",
+  "theme": "framework"
+ },
+ {
+  "id": 105,
+  "feed": "CERT-FR - Alertes",
+  "title": "Vulnérabilité dans Apple Mac OS X (24 juillet 2015)",
+  "summary": "Une vulnérabilité a été découverte dans Apple Mac OS X. Elle permet à un attaquant de provoquer une élévation de privilèges.",
+  "theme": "sécurité"
+ },
+ {
+  "id": 106,
+  "feed": "CERT-FR - Alertes",
+  "title": "[MàJ] Vulnérabilité dans Fortinet FortiOS (09 février 2024)",
+  "summary": "\\[Mise à jour du 19 mars 2024\\] Le CERT-FR a connaissance de codes d'exploitation publics et de nouvelles tentatives d'exploitation. Le 8 février 2024, Fortinet a publié l'avis de sécurité concernant la vulnérabilité critique CVE-2024-21762 affectant le VPN SSL de FortiOS. Cette vulnérabilité...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 107,
+  "feed": "CERT-FR - Alertes",
+  "title": "[MàJ] Vulnérabilité dans Palo Alto Networks GlobalProtect (12 avril 2024)",
+  "summary": "\\[Mise à jour du 10 mai 2024\\] Le CERT-FR est intervenu pour le traitement d'une compromission par rançongiciel au sein d'une entité française. Dans le cadre de cette attaque, la vulnérabilité a été exploitée pour ensuite réaliser une latéralisation dans le système d'information de la victime et...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 108,
+  "feed": "CERT-FR - Alertes",
+  "title": "Multiples vulnérabilités dans les produits Cisco (25 avril 2024)",
+  "summary": "Le 24 avril 2024, Cisco a publié trois avis de sécurité concernant des vulnérabilités affectant les équipements de sécurité ASA et FTD. Deux d'entre eux concernent les vulnérabilités CVE-2024-20353 et CVE-2024-20359 qui sont activement exploitées dans le cadre d'attaques ciblées. La vulnérabilité...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 109,
+  "feed": "CERT-FR - Alertes",
+  "title": "[MàJ] Vulnérabilité dans les produits Check Point (30 mai 2024)",
+  "summary": "[Mise à jour du 31 mai 2024] Des preuves de concept sont désormais disponibles publiquement sur Internet. De plus, l'éditeur indique avoir détecté des tentatives de compromission à partir du 7 avril 2024. **[Publication Initiale]** Une vulnérabilité a été découverte dans les produits Check Point....",
+  "theme": "sécurité"
+ },
+ {
+  "id": 110,
+  "feed": "CERT-FR - Alertes",
+  "title": "Vulnérabilité dans OpenSSH (01 juillet 2024)",
+  "summary": "Le 1 juillet 2024, OpenSSH a publié un avis de sécurité concernant la vulnérabilité critique CVE-2024-6387. Cette vulnérabilité permet à un attaquant non authentifié d'exécuter du code arbitraire à distance avec les privilèges *root*. L'éditeur précise que les versions 8.5p1 à 9.7p1 sont...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 111,
+  "feed": "CERT-FR - Alertes",
+  "title": "Multiples vulnérabilités dans Roundcube (09 août 2024)",
+  "summary": "Le 4 août 2024, Roundcube a publié des correctifs concernant les vulnérabilités critiques CVE-2024-42008 et CVE-2024-42009 affectant son serveur de courriel. Ces vulnérabilités permettent des injections de code indirectes à distance (XSS) qui peuvent, par exemple, conduire à la récupération du...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 112,
+  "feed": "CERT-FR - Alertes",
+  "title": "Vulnérabilité dans SonicWall (10 septembre 2024)",
+  "summary": "Le 22 août 2024, Sonicwall a publié un correctif concernant la vulnérabilité critique CVE-2024-40766 affectant les pare-feux Sonicwall génération 5, 6 et 7. Cette vulnérabilité, de type contrôle d'accès défaillant, permet à un attaquant de provoquer un déni de service à distance, une atteinte à...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 113,
+  "feed": "CERT-FR - Alertes",
+  "title": "[MàJ] Vulnérabilités affectant OpenPrinting CUPS (27 septembre 2024)",
+  "summary": "**[Mise à jour du 10 octobre 2024]** Le 28 septembre 2024, Elastic Security Labs a publié des règles de détection au format propriétaire de l'éditeur (cf. section Documentation), qui sont confirmées par les analyses du CERT-FR pour la détection des attaques connues. **[Publication initiale]** De...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 114,
+  "feed": "CERT-FR - Alertes",
+  "title": "Exploitations de vulnérabilités dans Ivanti Cloud Services Appliance (CSA) (22 octobre 2024)",
+  "summary": "Ivanti a publié plusieurs avis de sécurité sur des vulnérabilités affectant CSA qui sont activement exploitées : * le 10 septembre 2024, Ivanti a publié un avis de sécurité concernant la vulnérabilité CVE-2024-8190 qui permet à un attaquant, authentifié en tant qu'administrateur, d'exécuter du...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 115,
+  "feed": "CERT-FR - Alertes",
+  "title": "[MàJ] Multiples vulnérabilités dans Fortinet FortiManager (23 octobre 2024)",
+  "summary": "**[Mise à jour du 14 janvier 2025]** **Publication des correctifs** Le 14 janvier 2025, Fortinet a publié un avis de sécurité relatif à la vulnérabilité CVE-2024-50566 qui correspond à la vulnérabilité de type jour-zéro pour laquelle une preuve de concept a été publiée en novembre 2024. Des...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 116,
+  "feed": "CERT-FR - Alertes",
+  "title": "[MàJ] Multiples vulnérabilités sur l'interface d'administration des équipements Palo Alto Networks (15 novembre 2024)",
+  "summary": "Le 8 novembre 2024, Palo Alto Networks a publié un avis de sécurité relatif à une vulnérabilité critique dans certains pare-feux Palo Alto Networks. Elle permet à un attaquant non authentifié d'exécuter du code arbitraire à distance sur l'interface d'administration des équipements. L'éditeur...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 117,
+  "feed": "CERT-FR - Alertes",
+  "title": "[MàJ] Vulnérabilité dans les produits Ivanti (09 janvier 2025)",
+  "summary": "Une vulnérabilité jour-zéro de type débordement de pile a été découverte dans Ivanti Connect Secure (ICS), Policy Secure (IPS), Neurons for Zero Trust Access (ZTA) gateways. Cette vulnérabilité, d'identifiant CVE-2025-0282, permet à un attaquant non authentifié de provoquer une exécution de code...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 118,
+  "feed": "CERT-FR - Alertes",
+  "title": "[MàJ] Vulnérabilité dans les produits Fortinet (14 janvier 2025)",
+  "summary": "\\[Mise à jour du 28 janvier 2025\\] Une preuve de concept permettant l'exploitation de cette vulnérabilité est disponible publiquement. Le 14 janvier 2025, Fortinet a publié un avis de sécurité concernant la vulnérabilité critique CVE-2024-55591 affectant FortiOS et FortiProxy. Elle permet à un...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 119,
+  "feed": "CERT-FR - Alertes",
+  "title": "[MàJ] Vulnérabilité dans les produits Ivanti (03 avril 2025)",
+  "summary": "**\\[Mise à jour du 11 avril 2025\\]** Le CERT-FR a connaissance d'une preuve de concept publique permettant de provoquer une exécution de code arbitraire à distance. **[Mise à jour du 04 avril 2025]** Le CERT-FR a connaissance d'une preuve de concept publique permettant de provoquer un arrêt du...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 120,
+  "feed": "CERT-FR - Alertes",
+  "title": "Activités de post-exploitation dans Fortinet FortiGate (11 avril 2025)",
+  "summary": "Fortinet a publié le 10 avril 2025 un billet de blogue [1] indiquant l'utilisation d'une technique de post-exploitation qui permet une atteinte à la confidentialité des données de l'ensemble du système des équipements Fortigate affectés. Cette technique repose sur l'utilisation d'un lien...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 121,
+  "feed": "CERT-FR - Alertes",
+  "title": "Vulnérabilité dans SAP NetWeaver (28 avril 2025)",
+  "summary": "Le 24 avril 2025, SAP a publié un bulletin de sécurité relatif à la vulnérabilité CVE-2025-31324 qui permet l'exécution de code arbitraire à distance pour un utilisateur non authentifié. Cette vulnérabilité est provoquée par un contournement de la politique de sécurité qui permet de télécharger...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 122,
+  "feed": "CERT-FR - Alertes",
+  "title": "Vulnérabilité dans les produits Fortinet (13 mai 2025)",
+  "summary": "Le 13 mai 2025, Fortinet a publié un avis de sécurité concernant la vulnérabilité CVE-2025-32756. Celle-ci permet à un attaquant non authentifié d'exécuter du code arbitraire à distance. L'éditeur indique que cette vulnérabilité est activement exploitée. Les exploitations constatées jusqu'ici...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 123,
+  "feed": "CERT-FR - Alertes",
+  "title": "Multiples vulnérabilités dans Ivanti Endpoint Manager Mobile (EPMM) (14 mai 2025)",
+  "summary": "[Mise à jour du 15 mai 2025] Une preuve de concept est publiquement disponible sur Internet. [Publication initiale] Le 13 mai 2025, Ivanti a publié deux avis de sécurité concernant les vulnérabilités CVE-2025-4427 et CVE-2025-4428. L'utilisation combinée de ces deux vulnérabilités permet...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 124,
+  "feed": "CERT-FR - Alertes",
+  "title": "[MàJ] Vulnérabilité dans Roundcube (05 juin 2025)",
+  "summary": "[Mise à jour du 06 juin 2025] Une preuve de concept est publiquement disponible. [Publication initiale] Le 01 juin 2025, Roundcube a publié des correctifs concernant une vulnérabilité critique affectant son portail de messagerie ainsi que tous les produits l'incluant (par exemple cPanel et...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 125,
+  "feed": "CERT-FR - Alertes",
+  "title": "Multiples vulnérabilités dans Citrix NetScaler ADC et NetScaler Gateway (01 juillet 2025)",
+  "summary": "**[Mise à jour du 17 juillet 2025]** L'éditeur a publié un lien contenant une méthode d'évaluation permettant d'identifier des tentatives d'exploitation dans les journaux applicatifs et systèmes [12]. **[Mise à jour du 7 juillet 2025]** Le 17 juin 2025, Citrix a publié un bulletin de sécurité...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 126,
+  "feed": "CERT-FR - Alertes",
+  "title": "[MàJ] Multiples vulnérabilités dans Microsoft SharePoint (21 juillet 2025)",
+  "summary": "**[Mise à jour du 23 juillet 2025]** Le 20 juillet 2025, Microsoft a publié des correctifs pour une vulnérabilité de type limitation insuffisante d'un chemin d'accès à un répertoire restreint, aussi appelé *path traversal*, affectant SharePoint Enterprise Server 2016, SharePoint Server 2019 et...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 127,
+  "feed": "CERT-FR - Alertes",
+  "title": "Incidents de sécurité dans les pare-feux SonicWall (05 août 2025)",
+  "summary": "[Mise à jour du 7 août 2025] Le 6 août 2025, SonicWall a remplacé une partie de son communiqué initial pour indiquer que les incidents de sécurité évoqués étaient vraisemblablement corrélés à la vulnérabilité CVE-2024-40766. Celle-ci a fait l'objet d'un bulletin de sécurité, SNWLID-2024-0015 (cf....",
+  "theme": "sécurité"
+ },
+ {
+  "id": 128,
+  "feed": "CERT-FR - Alertes",
+  "title": "Vulnérabilité dans Citrix NetScaler ADC et NetScaler Gateway (26 août 2025)",
+  "summary": "Le 26 août 2025, Citrix a publié un bulletin de sécurité (cf. section Documentation) concernant, entre autres, la vulnérabilité CVE-2025-7775. Celle-ci permet une exécution de code arbitraire à distance et affecte toutes les versions de Citrix NetScaler ADC et NetScaler Gateway, dans certaines...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 129,
+  "feed": "CERT-FR - Alertes",
+  "title": "[MàJ] Multiples vulnérabilités dans Cisco ASA et FTD (25 septembre 2025)",
+  "summary": "**[Mise à jour du 07 novembre 2025]** Le 5 novembre 2025, Cisco a mis a jour son billet de blogue initialement publié le 25 septembre 2025 (cf. section Documentation). L'éditeur déclare avoir connaissance d'une nouvelle attaque, affectant les équipements ASA et FTD vulnérables, qui cause un déni...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 130,
+  "feed": "CERT-FR - Alertes",
+  "title": "[MàJ] Vulnérabilité dans React Server Components (05 décembre 2025)",
+  "summary": "**[Mise à jour du 11 décembre 2025]** Le CERT-FR a connaissance de multiples exploitations de la vulnérabilité CVE-2025-55182. Les serveurs avec une version vulnérable exposés après la publication des preuves de concept publiques du 5 décembre 2025 doivent être considérés comme compromis....",
+  "theme": "sécurité"
+ },
+ {
+  "id": 131,
+  "feed": "CERT-FR - Alertes",
+  "title": "[MàJ] Multiples vulnérabilités dans Ivanti Endpoint Manager Mobile (30 janvier 2026)",
+  "summary": "[Mise à jour du 09 février 2026] Le 6 février 2026, Ivanti a mis à disposition des scripts RPM de détection d'indicateurs de compromission, à utiliser en fonction de la version d'EPMM installée. L'éditeur a également mis son guide d'analyse à jour (cf. section Documentation). [Mise à jour du 02...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 132,
+  "feed": "CERT-FR - Alertes",
+  "title": "[MàJ] Vulnérabilité dans Cisco Catalyst SD-WAN (25 février 2026)",
+  "summary": "Une vulnérabilité a été découverte dans Cisco Catalyst SD-WAN. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité. Cisco indique que la vulnérabilité CVE-2026-20127 est activement exploitée.",
+  "theme": "sécurité"
+ },
+ {
+  "id": 133,
+  "feed": "CERT-FR - Alertes",
+  "title": "Note d’alerte – Ciblage des messageries instantanées (20 mars 2026)",
+  "summary": "Le CERT-FR observe une recrudescence de campagnes d’attaques ciblant les comptes de messagerie instantanées. Ces campagnes ciblent particulièrement les secteurs régaliens (personnalités politiques, cadres de l’administration) mais aussi les personnels de la société civile exerçant des fonctions...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 134,
+  "feed": "CERT-FR - Alertes",
+  "title": "Vulnérabilité dans F5 BIG-IP Access Policy Manager (31 mars 2026)",
+  "summary": "Le 15 octobre 2025, F5 a publié un avis de sécurité concernant entre autres la vulnérabilité CVE-2025-53521. Celle-ci affecte BIG-IP APM et permet à un attaquant non authentifié d'exécuter du code à distance. Le 29 mars 2026, l'éditeur indique que cette vulnérabilité est exploitée activement. Le...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 135,
+  "feed": "CERT-FR - Alertes",
+  "title": "[Màj] Vulnérabilité dans Microsoft Exchange Server (15 mai 2026)",
+  "summary": "[Mise à jour du 11 juin 2026] Le 9 juin 2026, Microsoft a publié des versions correctives. [Publication initiale] Le 14 mai 2026, Microsoft a publié un avis de sécurité concernant la vulnérabilité CVE-2026-42897 affectant Exchange Server. Elle permet à un attaquant non authentifié de provoquer...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 136,
+  "feed": "CERT-FR - Alertes",
+  "title": "Multiples vulnérabilités dans Sonicwall Secure Mobile Access (15 juillet 2026)",
+  "summary": "Le 14 juillet 2026, Sonicwall a publié un avis de sécurité concernant deux vulnérabilités affectant les Secure Mobile Access (SMA) 1000. La vulnérabilité critique CVE-2026-15409 permet une falsification de requêtes côté serveur (SSRF) de la part d'un attaquant non authentifié. La vulnérabilité...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 137,
+  "feed": "CERT-FR - Alertes",
+  "title": "Multiples vulnérabilités dans WordPress (20 juillet 2026)",
+  "summary": "Le 17 juillet 2026, WordPress a publié un correctif pour deux vulnérabilités : CVE-2026-60137 : une injection SQL (SQLi) ; CVE-2026-63030 : celle-ci permet un contournement de la politique de sécurité. Un attaquant peut exploiter ces deux vulnérabilités, de manière combinée, pour obtenir une...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 138,
+  "feed": "CERT-FR - Alertes",
+  "title": "Multiples vulnérabilités dans Microsoft Sharepoint (22 juillet 2026)",
+  "summary": "Le 14 juillet 2026, à l'occasion de sa mise à jour mensuelle, Microsoft a publié, entre autres, des correctifs pour deux vulnérabilités critiques affectant SharePoint. Les vulnérabilités CVE-2026-50522 et CVE-2026-58644 permettent à un attaquant non authentifié d'exécuter du code arbitraire à...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 139,
+  "feed": "CERT-FR - Alertes",
+  "title": "Multiples vulnérabilités dans SonicWall Secure Mobile Access (02 septembre 2026)",
+  "summary": "Le 01 septembre 2026, SonicWall a publié un avis de sécurité concernant deux vulnérabilités affectant les Secure Mobile Access (SMA) 1000. La vulnérabilité critique CVE-2026-83548 permet une falsification de requêtes côté serveur (SSRF) de la part d'un attaquant non authentifié. La vulnérabilité...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 140,
+  "feed": "CERT-FR - Alertes",
+  "title": "Vulnérabilité dans Metabase (10 septembre 2026)",
+  "summary": "Le 06 août 2026, Metabase a publié un avis de sécurité concernant une vulnérabilité critique permettant à un attaquant non authentifié de provoquer une injection SQL (SQLi) dans la base de donnée de l'application Metabase. Cette injection SQL permet d’obtenir les droits administrateur de...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 141,
+  "feed": "CERT-FR - Alertes",
+  "title": "Multiples vulnérabilités dans Citrix NetScaler ADC et Gateway (28 septembre 2026)",
+  "summary": "**[Mise à jour du 05 octobre 2026]** Le 4 octobre 2026, Citrix a publié un avis concernant une nouvelle vulnérabilité (CVE-2026-88779) permettant un déni de service à distance. La CISA indique que cette vulnérabilité est activement exploitée. **[Mise à jour du 30 septembre 2026]** Dans un billet...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 142,
+  "feed": "CERT-FR - Alertes",
+  "title": "Incident de sécurité ciblant les contrôleurs à distance des installations de réfrigération (12 octobre 2026)",
+  "summary": "Le CERT-FR a connaissance de nombreuses compromissions des controleurs à distance d'installation de réfrigération Danfoss série AK-SM, AK-SC ainsi que Copeland xweb et Dixell xweb. De manière générale l'exposition d'une interface de gestion sur Internet est contraire aux bonnes pratiques.",
+  "theme": "sécurité"
+ },
+ {
+  "id": 143,
+  "feed": "CERT-FR - Alertes",
+  "title": "Vulnérabilité dans Ivanti Connect Secure (ICS) (14 octobre 2026)",
+  "summary": "Une vulnérabilité a été découverte dans Ivanti Connect Secure (ICS). Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un contournement de la politique de sécurité. Ivanti indique que cette vulnérabilité CVE-2026-104935 est...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 144,
+  "feed": "CERT-FR - Alertes",
+  "title": "[Màj] Multiples vulnérabilités dans PHP (21 octobre 2026)",
+  "summary": "**[Mise à jour du 26 octobre 2026]** Le 23 octobre 2026, PHP a publié un avis de sécurité concernant la vulnérabilité CVE-2026-115560. Celle-ci permet une exécution de code arbitraire à distance. L'éditeur estime que les conditions d'exploitation exigent une combinaison d'options de configuration...",
+  "theme": "sécurité"
+ },
+ {
+  "id": 145,
+  "feed": "The Hacker News",
+  "title": "mSecure Warns Users to Change Passwords, Reset 2FA and Passkeys After Suspicious Activity",
+  "summary": "Customers of the mSecure password manager are being urged to act now to protect the confidential information they store in it, possibly by changing passwords, resetting two-factor authentication (2FA), and removing passkeys. The warning came in an email sent on November 3 in the name of developer mSeven Software. It says the company recently learned of suspicious activity linked to the app but",
+  "theme": "sécurité"
+ },
+ {
+  "id": 146,
+  "feed": "The Hacker News",
+  "title": "Chainstack Reports Production Systems Breach Exposing Customer Data and Password Hashes",
+  "summary": "Blockchain infrastructure provider Chainstack on Tuesday disclosed that it was targeted in a cyber attack that allowed an unauthorized party to gain access to some parts of its infrastructure. The incident is assessed to be part of a large-scale, artificial intelligence (AI)-powered attack campaign that came to light last week. \"An external attacker gained unauthorized access to part of",
+  "theme": "sécurité"
+ },
+ {
+  "id": 147,
+  "feed": "The Hacker News",
+  "title": "Binance Reveals How Fake Job Interviews and AI Tool Abuse Led to $6.43 Billion Theft",
+  "summary": "Binance on Tuesday said the record-setting theft of $6.43 billion in assets from the world's largest cryptocurrency exchange was the culmination of a \"sophisticated, multi-stage campaign\" that involved the use of a tampered Homebrew installation and recruitment-themed social engineering attack targeting two of its engineers. \"It was not a single isolated breach or a simple phishing incident,\"",
+  "theme": "sécurité"
+ },
+ {
+  "id": 148,
+  "feed": "The Hacker News",
+  "title": "Barracuda Flaws Could Be Chained to Bypass Authorization and Gain Root Access",
+  "summary": "Barracuda has disclosed details of two vulnerabilities affecting its products that, if chained together, could allow an attacker to bypass authorization controls and gain root access to a susceptible device. The vulnerabilities, a pre-authentication authorization bypass vulnerability and a command injection vulnerability, have been assigned the CVE identifiers CVE-2026-116606 (CVSS score: 9.3)",
+  "theme": "sécurité"
+ },
+ {
+  "id": 149,
+  "feed": "The Hacker News",
+  "title": "Google Warns LLMjacking Attacks Are Costing Some Enterprises Up to $1 Million in Cloud Charges",
+  "summary": "Google on Monday warned that threat actors are hijacking enterprise access to Large Language Models (LLMs) to fraudulently leverage expensive computing resources and AI services. The tactic is called LLMjacking, a form of resource hijacking adapted for the LLM era, where an attacker obtains an API key through phishing, source code leaks, misconfigured environments, or exposed client-side code",
+  "theme": "sécurité"
+ },
+ {
+  "id": 150,
+  "feed": "The Hacker News",
+  "title": "cPGuard Update Channel Hijacked to Backdoor Linux Servers and Collect Password Hashes",
+  "summary": "An attacker broke into the update system of the cPGuard security tool on November 2 and used it to send a malicious script to customers' Linux servers. The script installed a backdoor and collected password hashes and other sensitive files from servers that ran it, cPGuard maker OPSSHIELD said in an advisory. The attacker has since taken some of that data. cPGuard 5.88.25 and later versions",
+  "theme": "sécurité"
+ },
+ {
+  "id": 151,
+  "feed": "The Hacker News",
+  "title": "Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Releases Fixes for Testing",
+  "summary": "Fixed kernels for a use-after-free vulnerability in the Linux kernel's IPv4 TCP code are now available for Red Hat Enterprise Linux 8, 9, and 10, while Ubuntu's fixes for its three newest long-term-support releases remain in its opt-in testing channel with no date for a regular update. The flaw, tracked as CVE-2026-98432, can be reached by a remote, unauthenticated attacker and can",
+  "theme": "sécurité"
+ },
+ {
+  "id": 152,
+  "feed": "The Hacker News",
+  "title": "The 4 Elements of Exposure Prioritization and How to Operationalize Them",
+  "summary": "Your team is remediating more vulnerabilities than ever, yet your breach risk has barely changed. You’re spending too much time and effort on exposures attackers may never exploit, while higher-risk exposures sit, waiting in the queue. Gartner®’s report on exposure prioritization states that fewer than 10% of vulnerabilities are exploited, yet most are treated as urgent. The report also argues",
+  "theme": "sécurité"
+ },
+ {
+  "id": 153,
+  "feed": "The Hacker News",
+  "title": "Russia-Aligned Gorbag Hackers Exploit WinRAR Flaw to Deploy Data-Stealing Malware",
+  "summary": "A Russia-aligned threat actor known as Gorbag has been observed using simple information stealer malware in attacks targeting Ukrainian organizations. \"Active since at least February 2025, the group has focused exclusively on Ukrainian targets, with a clear preference for law enforcement and justice entities, local administrations near the front line, and the defense sector,\" ESET researcher",
+  "theme": "sécurité"
+ },
+ {
+  "id": 154,
+  "feed": "The Hacker News",
+  "title": "Hackers Exploit BTCPay Server Flaw to Steal Bitcoin and Litecoin From Hot Wallets",
+  "summary": "BTCPay Server, a self-hosted, open-source cryptocurrency payment processor, has urged users to install the latest version of its software in response to reports of Bitcoin and Litecoin being stolen from hot wallets on instances running older versions. \"Our investigation found that these attacks targeted servers running BTCPay Server 2.4.1 (released on 23 July 2026) or earlier,\" BTCPay Server",
+  "theme": "sécurité"
+ },
+ {
+  "id": 155,
+  "feed": "The Hacker News",
+  "title": "Synology NAS Devices Targeted in Ransomware Attacks Exploiting Patched DSM Flaw",
+  "summary": "Synology is urging customers to update the DiskStation Manager (DSM) software powering its Network Attached Storage (NAS) devices following ransomware attacks. The Taiwanese vendor said it observed threat actors exploiting a vulnerability patched in December 2024 to target devices running outdated versions of DSM. \"These attacks aim to encrypt data and extort ransom,\" it said in a statement",
+  "theme": "sécurité"
+ },
+ {
+  "id": 156,
+  "feed": "The Hacker News",
+  "title": "New Wave of Refrigeration Cyberattacks Hits Supermarkets Across Europe, Forcing Stores to Pull Food",
+  "summary": "Attackers remotely changed the settings on refrigeration controls at supermarkets in Belgium, Sweden, Estonia and other European countries overnight into Monday, November 2, warming fridges and freezers. No chain reported more than several dozen affected stores, and some had to throw away chilled and frozen food or take it off the shelf. Danfoss, a Danish maker of refrigeration controls,",
+  "theme": "sécurité"
+ },
+ {
+  "id": 157,
+  "feed": "The Hacker News",
+  "title": "Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors",
+  "summary": "A maximum-severity security flaw impacting Siemens SIMATIC IoT2050 Advanced devices has come under active exploitation, VulnCheck has revealed. The vulnerability, tracked as CVE-2026-58115 (CVSS score: 10.0), is a case of missing authentication for a critical function that could be exploited by an unauthenticated remote attacker to run arbitrary code. \"SIMATIC IoT2050 Advanced devices running",
+  "theme": "sécurité"
+ },
+ {
+  "id": 158,
+  "feed": "The Hacker News",
+  "title": "Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials",
+  "summary": "Threat actors are attempting to exploit an unpatched maximum-severity security vulnerability in the CryptoPayment Gateway WordPress plugin, according to findings from Defused Cyber. The vulnerability in question is CVE-2026-81648, which carries a CVSS score of 10.0. Successful exploitation of the flaw could permit unauthenticated users to delete arbitrary files on the server and extract",
+  "theme": "sécurité"
+ },
+ {
+  "id": 159,
+  "feed": "The Hacker News",
+  "title": "⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",
+  "summary": "Some attacks this week didn't need much of a trick. A fake support call, a trusted extension, a shared link, or a device with no password. Small things that people barely think about. Yet each was enough to cause serious trouble. Then there were the bigger messes. Billions stolen, hidden networks of hacked devices, poisoned software, and attackers finding new ways to turn normal tools against",
+  "theme": "sécurité"
+ },
+ {
+  "id": 160,
+  "feed": "The Hacker News",
+  "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
+  "summary": "A botnet of more than 1.3 million Android devices, mostly TV set-top boxes, lost control of its servers in late October in a takedown led by Google. Google says it is highly confident that device maker Videostrong intentionally put a backdoor in the boxes and sold access to criminals. They used the boxes for ad fraud and to pass other people's internet traffic through owners' home",
+  "theme": "sécurité"
+ },
+ {
+  "id": 161,
+  "feed": "The Hacker News",
+  "title": "DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment",
+  "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026. According to a report published by Dream Research Labs, the campaign has led to the compromise of a high-profile individual in Israel, along with additional compromises affecting a government cloud",
+  "theme": "sécurité"
+ },
+ {
+  "id": 162,
+  "feed": "The Hacker News",
+  "title": "Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers",
+  "summary": "Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code, IBM said last week. Langflow is an open-source tool for building AI agents and workflows, and its vulnerability reports go to IBM. Every release from 1.0.0 through 1.12.8 has the flaws, and the only fix is version 1.13.0. Neither flaw is in CISA's Known",
+  "theme": "sécurité"
+ },
+ {
+  "id": 163,
+  "feed": "The Hacker News",
+  "title": "Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy",
+  "summary": "Forty percent of security teams now use AI every day, and another 56% are testing it. Only 4% have no plans to adopt it, according to Prophet Security's State of AI in Security Operations 2026 survey of more than 250 CISOs, SOC leaders and practitioners. For the teams still testing, the next decision is whether their own SOC is ready. AI SOC readiness has two parts: whether a SOC has the",
+  "theme": "ia"
+ },
+ {
+  "id": 164,
+  "feed": "The Hacker News",
+  "title": "Attackers Pose as IT Support on Microsoft Teams, Abuse AD CS to Steal Company Data",
+  "summary": "Attackers posing as IT support on Microsoft Teams talked employees into giving them remote control of their PCs. They then used insecure Active Directory Certificate Services (AD CS) settings to obtain login certificates for privileged accounts, including one for a domain controller. Microsoft said in a report that it investigated two such intrusions, one of which resulted in company",
+  "theme": "sécurité"
+ },
+ {
+  "id": 165,
+  "feed": "The Hacker News",
+  "title": "Government Linux Servers Targeted With SysGoRAT and Suspected AI-Generated Scripts",
+  "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign specifically targeting Linux infrastructure associated with government entities and state-affiliated infrastructure. The activity, observed by Palo Alto Networks Unit 42 between October 2025 and April 2026, has been tracked under the moniker CL-UNK-1211, where \"CL\" refers to cluster and \"UNK\" stands for unknown",
+  "theme": "sécurité"
+ },
+ {
+  "id": 166,
+  "feed": "The Hacker News",
+  "title": "New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value",
+  "summary": "Cybersecurity researchers have discovered a new Windows infostealer malware called VOLTA-AUTODOXER (aka VOLTA) that makes use of a large language model (LLM) to rank a victim's stolen data by their monetization value. Like other typical stealer families, VOLTA is equipped to harvest passwords and cookies from Chromium-based web browsers; data from Outlook profiles and Slack workspaces;",
+  "theme": "sécurité"
+ },
+ {
+  "id": 167,
+  "feed": "Spring Blog",
+  "title": "This Week in Spring - November 3rd, 2026",
+  "summary": "Hi, Spring fans! Welcome to another installment of This Week in Spring ! It's Tuesday, and you know what that means? I'm thinking about production. Now, to be fair, I'm always thinking about production. But recently, I've been spending the weekend just overjoyed at how simple it was to get Cloud Foundry working on my laptop, in Docker, with this GitHub repository . You see, I normally rely on an internal cluster at work to try out the latest and greatest in the platform, but I've always wanted…",
+  "theme": "framework"
+ },
+ {
+  "id": 180,
+  "feed": "Hugging Face",
+  "title": "Build specialized multimodal models with LFM3",
+  "summary": "LFM3 brings four main changes compared to our previous LFM2 family:",
+  "theme": "ia"
+ },
+ {
+  "id": 197,
+  "feed": "Hugging Face",
+  "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
+  "summary": "Enterprises need agents that work well in their own environments. The work they ask these agents to do is shaped by the systems they use, the rules they follow, and the state of their data. A model may be broadly capable and still struggle with a particular environment: a workflow it handles",
+  "theme": "ia"
+ },
+ {
+  "id": 209,
+  "feed": "Hugging Face",
+  "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
+  "summary": "TL;DR We introduce NeoMME, a family of 260M and 800M multilingual multimodal encoders. Unlike many generative visual language models, NeoMME does not use a separate pretrained vision tower or a causal language model. A single bidirectional Transformer processes both text tokens and raw image",
+  "theme": "ia"
+ },
+ {
+  "id": 217,
+  "feed": "Hugging Face",
+  "title": "Granite 4.2 LLMs: How They're Built",
+  "summary": "TL;DR: Granite 4.2 is our first family of dense, decoder-only reasoning LLMs, released in three sizes: 3B, 8B, and 30B. These models are post-trained from Granite-4.1 base models. Granite-4.1 base models were pre-trained from scratch on roughly 15T tokens with a five-phase strategy that extends the",
+  "theme": "ia"
+ },
+ {
+  "id": 238,
+  "feed": "Hugging Face",
+  "title": "Bringing Nunchaku 4-bit Diffusion Inference to Diffusers",
+  "summary": "Most of these backends are weight-only. This means that they store the weights in low precision and dequantize them back to high precision at compute time. This reduces memory usage significantly, but it usually does not make inference faster, and can even add a small latency overhead.",
+  "theme": "ia"
+ },
+ {
+  "id": 257,
+  "feed": "Hugging Face",
+  "title": "DiScoFormer: One transformer for density and score, across distributions",
+  "summary": "Many problems in machine learning and the sciences come down to the same task: you have a collection of data points and want to recover the distribution they came from—which values are common, and which are rare. Pinning down that distribution means estimating two quantities: the distribution's",
+  "theme": "ia"
+ },
+ {
+  "id": 298,
+  "feed": "Hugging Face",
+  "title": "DeepSeek-V4: a million-token context that agents can actually use",
+  "summary": "Focusing on long running agentic workloads. Running a frontier open model as an agent today breaks in predictable ways. The model stops. You reprompt. The trace blows past the context budget, or the KV cache fills the GPU, or tool-call round trips degrade halfway through a long task. V4 is built to",
+  "theme": "ia"
+ },
+ {
+  "id": 308,
+  "feed": "Hugging Face",
+  "title": "Multimodal Embedding & Reranker Models with Sentence Transformers",
+  "summary": "Multimodal embedding models map inputs from different modalities into a shared embedding space, while multimodal reranker models score the relevance of mixed-modality pairs. This opens up use cases like visual document retrieval, cross-modal search, and multimodal RAG pipelines.",
+  "theme": "ia"
+ },
+ {
+  "id": 320,
+  "feed": "Hugging Face",
+  "title": "Holotron-12B - High Throughput Computer Use Agent",
+  "summary": "We're thrilled to release Holotron-12B, a multimodal computer-use model from H Company. Post-trained from the open NVIDIA Nemotron-Nano-2 VL model on H Company’s proprietary data mixture, Holotron-12B is the result of a close collaboration between our research labs to engineer a new type of model",
+  "theme": "ia"
+ },
+ {
+  "id": 344,
+  "feed": "Hugging Face",
+  "title": "Alyah ⭐️: Toward Robust Evaluation of Emirati Dialect Capabilities in Arabic LLMs",
+  "summary": "Arabic is one of the most widely spoken languages in the world, with hundreds of millions of speakers across more than twenty countries. Despite this global reach, Arabic is not a monolithic language. Modern Standard Arabic coexists with a rich landscape of regional dialects that differ",
+  "theme": "ia"
+ },
+ {
+  "id": 362,
+  "feed": "Hugging Face",
+  "title": "We Got Claude to Fine-Tune an Open Source LLM",
+  "summary": "We gave Claude the ability to fine-tune language models using a new tool called Hugging Face Skills. Not just write training scripts, but to actually submit jobs to cloud GPUs, monitor progress, and push finished models to the Hugging Face Hub. This tutorial shows you how it works and how to use it",
+  "theme": "ia"
+ },
+ {
+  "id": 401,
+  "feed": "Hugging Face",
+  "title": "Smol2Operator: Post-Training GUI Agents for Computer Use",
+  "summary": "Table of Contents Introduction 1. Data Transformation and Unified Action Space The Challenge of Inconsistent Action Spaces Our Unified Approach Example Data Transformation Custom Action Space Adaptation with Action Space Converter Key Features Usage Example Transformed and Released Datasets 2.",
+  "theme": "ia"
+ },
+ {
+  "id": 430,
+  "feed": "Hugging Face",
+  "title": "Measuring Open-Source Llama Nemotron Models on DeepResearch Bench",
+  "summary": "NVIDIA’s AI-Q Blueprint—the leading portable, open deep research agent—recently climbed to the top of the Hugging Face “LLM with Search” leaderboard on DeepResearch Bench. This is a significant step forward for the open-source AI stack, proving that developer-accessible models can power advanced",
+  "theme": "ia"
+ },
+ {
+  "id": 441,
+  "feed": "Hugging Face",
+  "title": "Back to The Future: Evaluating AI Agents on Predicting Future Events",
+  "summary": "Forecasting future events is a complex and holistic task: it requires sophisticated reasoning, synthesis, weighing probabilities and genuine understanding, rather than pattern matching against or searching existing information. Evaluating models on their ability to predict future outcomes, whether",
+  "theme": "ia"
+ },
+ {
+  "id": 455,
+  "feed": "Hugging Face",
+  "title": "Announcing NeurIPS 2025 E2LM Competition: Early Training Evaluation of Language Models",
+  "summary": "Join us in building benchmarks that capture early-stage reasoning & scientific knowledge in LLMs!",
+  "theme": "ia"
+ },
+ {
+  "id": 471,
+  "feed": "Hugging Face",
+  "title": "SmolVLA: Efficient Vision-Language-Action Model trained on Lerobot Community Data",
+  "summary": "📚 Table of Contents 🧭 TL;DR 📖 Introduction 🤖 Meet SmolVLA 🚀 How to Use SmolVLA? Install Finetune the Pretrained Model Train from Scratch 🧠 Method Main Architecture Vision-Language Model (VLM) Action Expert: Flow Matching Transformer Design Choices for Efficiency and Robustness Visual Token",
+  "theme": "ia"
+ },
+ {
+  "id": 501,
+  "feed": "Hugging Face",
+  "title": "Visual Salamandra: Pushing the Boundaries of Multimodal Understanding",
+  "summary": "Designed with vision-language alignment at its core, Visual Salamandra builds on top of the Salamandra Instructed 7B model by integrating Google’s SigLIP encoder (SigLIP-So400m), a 2-layer MLP projector, and advanced late-fusion techniques to bridge the gap between visual and textual modalities.",
+  "theme": "ia"
+ },
+ {
+  "id": 528,
+  "feed": "Hugging Face",
+  "title": "SigLIP 2: A better multilingual vision language encoder",
+  "summary": "SigLIP 2 models outperform the older SigLIP ones at all model scales in core capabilities, including zero-shot classification, image-text retrieval, and transfer performance when extracting visual representations for Vision-Language Models (VLMs).",
+  "theme": "ia"
+ },
+ {
+  "id": 540,
+  "feed": "Hugging Face",
+  "title": "π0 and π0-FAST: Vision-Language-Action Models for General Robot Control",
+  "summary": "Explore the model collection and the PyTorch Version of the model in our repository: Huggingface collection of Pi0 models | Huggingface collection of Pi0+FAST models | LeRobot repo",
+  "theme": "ia"
+ },
+ {
+  "id": 564,
+  "feed": "Hugging Face",
+  "title": "Finally, a Replacement for BERT: Introducing ModernBERT",
+  "summary": "ModernBERT is available as a slot-in replacement for any BERT-like models, with both a base (149M params) and large (395M params) model size.",
+  "theme": "ia"
+ },
+ {
+  "id": 598,
+  "feed": "Hugging Face",
+  "title": "Deploying Speech-to-Speech on Hugging Face",
+  "summary": "The project implements a cascaded pipeline leveraging models available through the Transformers library on the Hugging Face hub. The pipeline consists of the following components:",
+  "theme": "ia"
+ },
+ {
+  "id": 635,
+  "feed": "Hugging Face",
+  "title": "Llama 3.1 - 405B, 70B & 8B with multilinguality and long context",
+  "summary": "Llama 3.1 comes in three sizes: 8B for efficient deployment and development on consumer-size GPU, 70B for large-scale AI native applications, and 405B for synthetic data, LLM as a Judge or distillation. All three come in base and instruction-tuned variants.",
+  "theme": "ia"
+ },
+ {
+  "id": 651,
+  "feed": "Hugging Face",
+  "title": "XLSCOUT Unveils ParaEmbed 2.0: a Powerful Embedding Model Tailored for Patents and IP with Expert Support from Hugging Face",
+  "summary": "XLSCOUT, a Toronto-based leader in the use of AI in intellectual property (IP), has developed a powerful proprietary embedding model called ParaEmbed 2.0 stemming from an ambitious collaboration with Hugging Face’s Expert Support Program. The collaboration focuses on applying state-of-the-art AI",
+  "theme": "ia"
+ },
+ {
+  "id": 663,
+  "feed": "Hugging Face",
+  "title": "Introducing NPC-Playground, a 3D playground to interact with LLM-powered NPCs",
+  "summary": "LLMs, or Large Language Models, make it possible to design \"intelligent\" in-game characters that can engage in realistic conversations with the player, perform complex actions and follow instructions, dramatically enhancing the player's experience. AI-powered NPCs represent a huge advancement vs",
+  "theme": "ia"
+ },
+ {
+  "id": 696,
+  "feed": "Hugging Face",
+  "title": "Vision Language Models Explained",
+  "summary": "Vision language models are models that can learn simultaneously from images and texts to tackle many tasks, from visual question answering to image captioning. In this post, we go through the main building blocks of vision language models: have an overview, grasp how they work, figure out how to",
+  "theme": "ia"
+ },
+ {
+  "id": 710,
+  "feed": "Hugging Face",
+  "title": "GaLore: Advancing Large Model Training on Consumer-grade Hardware",
+  "summary": "Scaling LLMs with Consumer-Grade Hardware The capability of GaLore to facilitate the training of models with up to 7 billion parameters, such as those based on the Llama architecture, on consumer GPUs like the NVIDIA RTX 4090, is groundbreaking. This is achieved by significantly reducing the memory",
+  "theme": "ia"
+ },
+ {
+  "id": 724,
+  "feed": "Hugging Face",
+  "title": "Welcome Gemma - Google’s new open LLM",
+  "summary": "Gemma, a new family of state-of-the-art open LLMs, was released today by Google! It's great to see Google reinforcing its commitment to open-source AI, and we’re excited to fully support the launch with comprehensive integration in Hugging Face.",
+  "theme": "ia"
+ },
+ {
+  "id": 732,
+  "feed": "Hugging Face",
+  "title": "Constitutional AI with Open LLMs",
+  "summary": "To align these LLMs according to a set of values, researchers at Anthropic have proposed a technique called Constitutional AI (CAI), which asks the models to critique their outputs and self-improve according to a set of user-defined principles. This is exciting because the practitioners only need",
+  "theme": "ia"
+ },
+ {
+  "id": 757,
+  "feed": "Hugging Face",
+  "title": "Goodbye cold boot - how we made LoRA Inference 300% faster",
+  "summary": "We've been able to drastically speed up inference in the Hub for public LoRAs based on public Diffusion models. This has allowed us to save compute resources and provide a faster and better user experience.",
+  "theme": "ia"
+ },
+ {
+  "id": 784,
+  "feed": "Hugging Face",
+  "title": "Fine-tuning Llama 2 70B using PyTorch FSDP",
+  "summary": "Fully Sharded Data Parallelism (FSDP) is a paradigm in which the optimizer states, gradients and parameters are sharded across devices. During the forward pass, each FSDP unit performs an all-gather operation to get the complete weights, computation is performed followed by discarding the shards",
+  "theme": "ia"
+ },
+ {
+  "id": 824,
+  "feed": "Hugging Face",
+  "title": "Fine-Tune MMS Adapter Models for low-resource ASR",
+  "summary": "Wav2Vec2 is a pretrained model for Automatic Speech Recognition (ASR) and was released in September 2020 by Alexei Baevski, Michael Auli, and Alex Conneau. Soon after the strong performance of Wav2Vec2 was demonstrated on one of the most popular English datasets for ASR, called LibriSpeech,",
+  "theme": "ia"
+ },
+ {
+  "id": 840,
+  "feed": "Hugging Face",
+  "title": "Making LLMs even more accessible with bitsandbytes, 4-bit quantization and QLoRA",
+  "summary": "We present QLoRA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance. QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low",
+  "theme": "ia"
+ },
+ {
+  "id": 852,
+  "feed": "Hugging Face",
+  "title": "A Dive into Text-to-Video Models",
+  "summary": "Text-to-video is next in line in the long list of incredible advances in generative models. As self-descriptive as it is, text-to-video is a fairly new computer vision task that involves generating a sequence of images from text descriptions that are both temporally and spatially consistent. While",
+  "theme": "ia"
+ },
+ {
+  "id": 864,
+  "feed": "Hugging Face",
+  "title": "StackLLaMA: A hands-on guide to train LLaMA with RLHF",
+  "summary": "In this blog post, we show all the steps involved in training a LlaMa model to answer questions on Stack Exchange with RLHF through a combination of:",
+  "theme": "ia"
+ },
+ {
+  "id": 885,
+  "feed": "Hugging Face",
+  "title": "Speech Synthesis, Recognition, and More With SpeechT5",
+  "summary": "SpeechT5 was originally described in the paper SpeechT5: Unified-Modal Encoder-Decoder Pre-Training for Spoken Language Processing by Microsoft Research Asia. The official checkpoints published by the paper’s authors are available on the Hugging Face Hub.",
+  "theme": "ia"
+ },
+ {
+  "id": 892,
+  "feed": "Hugging Face",
+  "title": "Using LoRA for Efficient Stable Diffusion Fine-Tuning",
+  "summary": "LoRA for Diffusers 🧨 Even though LoRA was initially proposed for large-language models and demonstrated on transformer blocks, the technique can also be applied elsewhere. In the case of Stable Diffusion fine-tuning, LoRA can be applied to the cross-attention layers that relate the image",
+  "theme": "ia"
+ },
+ {
+  "id": 912,
+  "feed": "Hugging Face",
+  "title": "Probabilistic Time Series Forecasting with 🤗 Transformers",
+  "summary": "Probabilistic Forecasting Typically, classical methods are fitted on each time series in a dataset individually. These are often referred to as \"single\" or \"local\" methods. However, when dealing with a large amount of time series for some applications, it is beneficial to train a \"global\" model on",
+  "theme": "ia"
+ },
+ {
+  "id": 921,
+  "feed": "Hugging Face",
+  "title": "Generating Human-level Text with Contrastive Search in Transformers 🤗",
+  "summary": "[Remark] For users who are not familiar with text generation, please refer more details to this blog post.",
+  "theme": "ia"
+ },
+ {
+  "id": 1011,
+  "feed": "Hugging Face",
+  "title": "Fine-Tune ViT for Image Classification with 🤗 Transformers",
+  "summary": "This paper explored how you can tokenize images, just as you would tokenize sentences, so that they can be passed to transformer models for training. It's quite a simple concept, really...",
+  "theme": "ia"
+ },
+ {
+  "id": 1039,
+  "feed": "Hugging Face",
+  "title": "Deep Learning over the Internet: Training Language Models Collaboratively",
+  "summary": "In this blog post, we describe DeDLOC — a new method for collaborative distributed training that can adapt itself to the network and hardware constraints of participants. We show that it can be successfully applied in real-world scenarios by pretraining sahajBERT, a model for the Bengali language,",
+  "theme": "ia"
+ }
+]
